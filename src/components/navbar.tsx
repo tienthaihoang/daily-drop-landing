@@ -27,14 +27,14 @@ export default function Navbar() {
     <>
       <nav className="fixed top-0 left-0 w-full z-[999]">
         <div className="container mx-auto px-4 py-3 md:py-4">
-          <div className="backdrop-blur-md bg-white/70 shadow-sm border-b border-gray-200 rounded-2xl px-4 md:px-6">
+          <div className="backdrop-blur-md bg-cyan-50/70 shadow-sm border-b border-gray-200 rounded-2xl px-4 md:px-6">
             <div className="grid grid-cols-12 items-center py-3">
               <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex items-center justify-between">
                 <Link
                   href="/"
                   className="flex items-center transition-transform hover:scale-105"
                 >
-                  <div className="text-2xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-green-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
                     Daily Drop
                   </div>
                 </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
                     <Link
                       key={idx}
                       href={item.path}
-                      className="font-semibold text-gray-800 hover:text-purple-600 transition-all hover:scale-110"
+                      className="font-semibold text-gray-800 hover:text-cyan-600 transition-all hover:scale-110"
                     >
                       {t(item.title)}
                     </Link>
@@ -115,7 +115,7 @@ export default function Navbar() {
 
                   <button
                     onClick={() => setContactModalOpen(true)}
-                    className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
                     {t("contact")}
                   </button>
@@ -133,7 +133,7 @@ export default function Navbar() {
                       key={idx}
                       href={item.path}
                       onClick={() => setOpen(false)}
-                      className={`font-semibold text-gray-800 hover:text-purple-600 transition-all hover:scale-105 transform ${
+                      className={`font-semibold text-gray-800 hover:text-cyan-600 transition-all hover:scale-105 transform ${
                         open
                           ? "translate-y-0 opacity-100"
                           : "-translate-y-4 opacity-0"
@@ -151,7 +151,7 @@ export default function Navbar() {
                       setContactModalOpen(true);
                       setOpen(false);
                     }}
-                    className={`group relative bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-purple-300/50 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2 transform ${
+                    className={`group relative bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-purple-300/50 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2 transform ${
                       open
                         ? "translate-y-0 opacity-100"
                         : "-translate-y-4 opacity-0"

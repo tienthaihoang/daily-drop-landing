@@ -224,7 +224,7 @@ export default function PricingPlans() {
                       </span>
                     </div>
 
-                    <button className="w-full group bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
+                    <button className="w-full group bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
                       {t("common.getStarted")}
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </button>

@@ -23,7 +23,7 @@ export default function PrivacyPolicyContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-blue-50">
       {/* Back Button - Fixed with locale */}
       <div className="fixed top-10 left-4 z-50">
         <Link
@@ -35,14 +35,14 @@ export default function PrivacyPolicyContent() {
         </Link>
       </div>
 
-      <div className="bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 py-20 px-4">
+      <div className="bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3">
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-purple-200 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-cyan-200 shadow-sm">
                   <svg
-                    className="w-5 h-5 text-purple-600"
+                    className="w-5 h-5 text-cyan-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -54,7 +54,7 @@ export default function PrivacyPolicyContent() {
                       d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
                     />
                   </svg>
-                  <span className="text-sm font-semibold text-purple-900">
+                  <span className="text-sm font-semibold text-cyan-900">
                     {t("badge")}
                   </span>
                 </div>
@@ -86,7 +86,7 @@ export default function PrivacyPolicyContent() {
                       <a
                         key={idx}
                         href={`#${section.key}`}
-                        className="block text-sm text-slate-600 hover:text-purple-600 transition-colors py-1"
+                        className="block text-sm text-slate-600 hover:text-cyan-600 transition-colors py-1"
                       >
                         {t(`sections.${section.key}.title`)}
                       </a>
@@ -106,7 +106,7 @@ export default function PrivacyPolicyContent() {
                   >
                     <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                       <h2 className="text-3xl font-black text-slate-900 mb-6 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-500 text-white text-lg font-bold">
+                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-500 text-white text-lg font-bold">
                           {idx + 1}
                         </span>
                         {t(`sections.${section.key}.title`)}
@@ -124,7 +124,7 @@ export default function PrivacyPolicyContent() {
                                   className="flex items-start gap-3"
                                 >
                                   <svg
-                                    className="w-5 h-5 text-purple-600 flex-shrink-0 mt-0.5"
+                                    className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                   >
@@ -157,7 +157,7 @@ export default function PrivacyPolicyContent() {
                 ))}
               </div>
 
-              <div className="mt-12 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-2xl p-8 border-2 border-purple-200">
+              <div className="mt-12 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-2xl p-8 border-2 border-purple-200">
                 <div className="text-center">
                   <h3 className="text-2xl font-black text-slate-900 mb-3">
                     {t("cta.title")}
@@ -165,7 +165,7 @@ export default function PrivacyPolicyContent() {
                   <p className="text-slate-600 mb-6">{t("cta.subtitle")}</p>
                   <a
                     href="mailto:privacy@dailydrop.com"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
                     <svg
                       className="w-5 h-5"

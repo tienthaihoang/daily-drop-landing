@@ -37,7 +37,7 @@ export default function FAQSection() {
 
   return (
     <>
-      <section id="faq" className="py-20 px-4 bg-white scroll-mt-16">
+      <section id="faq" className="py-20 px-4 bg-cyan-50 scroll-mt-16">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 mb-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
@@ -87,14 +87,14 @@ export default function FAQSection() {
                 ))}
               </div>
 
-              <div className="mt-12 text-center bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 rounded-3xl p-8 border-2 border-slate-200">
+              <div className="mt-12 text-center bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-3xl p-8 border-2 border-slate-200">
                 <h3 className="text-2xl font-black text-slate-900 mb-3">
                   {t("cta.title")}
                 </h3>
                 <p className="text-slate-600 mb-6">{t("cta.subtitle")}</p>
                 <button
                   onClick={() => setContactModalOpen(true)}
-                  className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-r from-green-400 to-cyan-500 text-slate-900 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                 >
                   {t("cta.button")}
                 </button>

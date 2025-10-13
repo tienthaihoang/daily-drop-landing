@@ -129,7 +129,7 @@ export default function ClientReviews() {
   return (
     <section
       id="reviews"
-      className="py-20 px-4 bg-gradient-to-b from-slate-50 to-white scroll-mt-16"
+      className="py-20 px-4 bg-cyan-50 scroll-mt-16"
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-12 mb-16">

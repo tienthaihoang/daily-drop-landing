@@ -10,33 +10,33 @@ export default function OurServices() {
     {
       titleKey: "design",
       image: "/graphic-design-services.jpg",
-      gradient: "from-purple-500 to-pink-500",
-      bgGradient: "from-purple-100 to-pink-100",
+      gradient: "from-green-400 to-teal-400",
+      bgGradient: "from-green-100 to-teal-100",
     },
     {
       titleKey: "video",
       image: "/video-editing.jpg",
-      gradient: "from-pink-500 to-rose-500",
-      bgGradient: "from-pink-100 to-rose-100",
+      gradient: "from-teal-400 to-cyan-400",
+      bgGradient: "from-teal-100 to-cyan-100",
     },
     {
       titleKey: "development",
       image: "/web-development.png",
-      gradient: "from-orange-500 to-amber-500",
-      bgGradient: "from-orange-100 to-amber-100",
+      gradient: "from-green-400 to-cyan-400",
+      bgGradient: "from-green-100 to-cyan-100",
     },
     {
       titleKey: "content",
       image: "/content-writing.jpg",
-      gradient: "from-blue-500 to-cyan-500",
-      bgGradient: "from-blue-100 to-cyan-100",
+      gradient: "from-cyan-400 to-blue-400",
+      bgGradient: "from-cyan-100 to-blue-100",
     },
   ];
 
   return (
     <section
       id="services"
-      className="py-20 px-4 bg-gradient-to-br from-purple-50 via-pink-50 to-orange-50 scroll-mt-16"
+      className="py-20 px-4 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 scroll-mt-16"
     >
       <div className="container mx-auto">
         <div className="grid grid-cols-12 mb-16">

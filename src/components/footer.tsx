@@ -55,18 +55,18 @@ export default function PageFooter() {
   ];
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-cyan-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
               <div className="lg:col-span-2">
                 <Link href="/" className="inline-block mb-6">
-                  <div className="text-2xl font-black bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-green-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
                     Daily Drop
                   </div>
                 </Link>
-                <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+                <p className="text-cyan-200 text-sm mb-6 leading-relaxed">
                   {t("description")}
                 </p>
 
@@ -78,7 +78,7 @@ export default function PageFooter() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={social.label}
-                      className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                      className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-gradient-to-r hover:from-green-400 hover:to-cyan-400 flex items-center justify-center transition-all duration-300 hover:scale-110"
                     >
                       {social.icon}
                     </a>
@@ -95,7 +95,7 @@ export default function PageFooter() {
                     <li key={idx}>
                       <Link
                         href={item.href}
-                        className="text-slate-400 hover:text-white text-sm transition-colors"
+                        className="text-cyan-200 hover:text-white text-sm transition-colors"
                       >
                         {t(`company.${item.nameKey}`)}
                       </Link>
@@ -113,7 +113,7 @@ export default function PageFooter() {
                     <li key={idx}>
                       <Link
                         href={item.href}
-                        className="text-slate-400 hover:text-white text-sm transition-colors"
+                        className="text-cyan-200 hover:text-white text-sm transition-colors"
                       >
                         {t(`resources.${item.nameKey}`)}
                       </Link>
@@ -125,7 +125,7 @@ export default function PageFooter() {
 
             <div className="pt-8 border-t border-slate-800">
               <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-                <p className="text-slate-400 text-sm">
+                <p className="text-cyan-200 text-sm">
                   &copy; {currentYear} DailyDrop. {t("copyright")}
                 </p>
 
@@ -134,7 +134,7 @@ export default function PageFooter() {
                     <Link
                       key={idx}
                       href={item.href}
-                      className="text-slate-400 hover:text-white text-sm transition-colors"
+                      className="text-cyan-200 hover:text-white text-sm transition-colors"
                     >
                       {t(`legal.${item.nameKey}`)}
                     </Link>

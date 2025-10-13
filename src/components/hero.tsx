@@ -42,21 +42,21 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50 relative overflow-hidden pt-[120px] pb-16 px-4">
-      <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-purple-300/40 to-pink-300/40 rounded-full blur-3xl"></div>
+    <section className="bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 relative overflow-hidden pt-[120px] pb-16 px-4">
+      <div className="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-teal-300/40 to-cyan-300/40 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-br from-cyan-300/40 to-blue-300/40 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-orange-300/30 to-yellow-300/30 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-green-300/30 to-teal-300/30 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-purple-200 rounded-full px-5 py-2 mb-8 shadow-lg shadow-purple-100">
-              <span className="text-sm font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+              <span className="text-sm font-semibold bg-gradient-to-r from-green-500 to-cyan-500 bg-clip-text text-transparent">
                 {t("badge")}
               </span>
             </div>
             <h1 className="text-6xl md:text-7xl font-black mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-green-500 via-teal-400 to-cyan-500 bg-clip-text text-transparent">
                 {t("title1")}
               </span>
               <br />
@@ -97,7 +97,7 @@ export default function HeroSection() {
                   </p>
                 </div>
 
-                <button className="group relative bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-purple-300 hover:shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                <button className="group relative bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-purple-300 hover:shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-105 flex items-center gap-2">
                   {t("pricing.cta")}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>

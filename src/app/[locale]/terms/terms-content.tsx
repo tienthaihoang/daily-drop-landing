@@ -25,7 +25,7 @@ export default function TermsContent() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-blue-50">
       {/* Back Button */}
       <div className="fixed top-10 left-4 z-50">
         <Link
@@ -38,14 +38,14 @@ export default function TermsContent() {
       </div>
 
       {/* Header */}
-      <div className="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-20 px-4">
+      <div className="bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3">
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-blue-200 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-cyan-200 shadow-sm">
                   <svg
-                    className="w-5 h-5 text-blue-600"
+                    className="w-5 h-5 text-cyan-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -57,7 +57,7 @@ export default function TermsContent() {
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                   </svg>
-                  <span className="text-sm font-semibold text-blue-900">
+                  <span className="text-sm font-semibold text-cyan-900">
                     {t("badge")}
                   </span>
                 </div>
@@ -82,7 +82,7 @@ export default function TermsContent() {
             {/* Table of Contents */}
             <div className="hidden lg:block lg:col-span-3 lg:col-start-2">
               <div className="sticky top-24">
-                <div className="bg-white rounded-2xl p-6 border-2 border-slate-200 shadow-sm">
+                <div className="bg-white rounded-2xl p-6 border-2 border-cyan-200 shadow-sm">
                   <h3 className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wide">
                     {t("tableOfContents")}
                   </h3>
@@ -91,7 +91,7 @@ export default function TermsContent() {
                       <a
                         key={idx}
                         href={`#${section.key}`}
-                        className="block text-sm text-slate-600 hover:text-blue-600 transition-colors py-1"
+                        className="block text-sm text-slate-600 hover:text-cyan-600 transition-colors py-1"
                       >
                         {t(`sections.${section.key}.title`)}
                       </a>
@@ -112,7 +112,7 @@ export default function TermsContent() {
                   >
                     <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                       <h2 className="text-3xl font-black text-slate-900 mb-6 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-500 text-white text-lg font-bold">
+                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-500 text-white text-lg font-bold">
                           {idx + 1}
                         </span>
                         {t(`sections.${section.key}.title`)}
@@ -130,7 +130,7 @@ export default function TermsContent() {
                                   className="flex items-start gap-3"
                                 >
                                   <svg
-                                    className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5"
+                                    className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                   >
@@ -164,7 +164,7 @@ export default function TermsContent() {
               </div>
 
               {/* Contact CTA */}
-              <div className="mt-12 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-2xl p-8 border-2 border-blue-200">
+              <div className="mt-12 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-2xl p-8 border-2 border-blue-200">
                 <div className="text-center">
                   <h3 className="text-2xl font-black text-slate-900 mb-3">
                     {t("cta.title")}
@@ -172,7 +172,7 @@ export default function TermsContent() {
                   <p className="text-slate-600 mb-6">{t("cta.subtitle")}</p>
                   <a
                     href="mailto:legal@dailydrop.com"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                   >
                     <svg
                       className="w-5 h-5"

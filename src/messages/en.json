@@ -1,0 +1,509 @@
+{
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact us"
+  },
+  "hero": {
+    "badge": "⭐ 4.8 Rating · 750+ Projects",
+    "title1": "Creative Services",
+    "title2": "Without Limits",
+    "subtitle": "Design, video, development & content—all in one subscription. Fixed price. Unlimited requests.",
+    "services": {
+      "design": "Design",
+      "video": "Video",
+      "development": "Development",
+      "content": "Content"
+    },
+    "pricing": {
+      "amount": "$795",
+      "period": "/month",
+      "cancel": "Cancel anytime · 7-day free trial",
+      "cta": "Get Started"
+    },
+    "features": {
+      "delivery": "⚡ 48h delivery",
+      "unlimited": "♾️ Unlimited requests",
+      "team": "🎯 Dedicated team",
+      "quality": "✨ Premium quality"
+    }
+  },
+  "gallery": {
+    "titles": {
+      "creativeDesign": "Creative Design",
+      "brandIdentity": "Brand Identity",
+      "digitalMarketing": "Digital Marketing",
+      "webDesign": "Web Design",
+      "uiuxDesign": "UI/UX Design",
+      "photography": "Photography",
+      "teamWork": "Team Work",
+      "development": "Development"
+    }
+  },
+  "ourServices": {
+    "title": "What you get with our services",
+    "subtitle": "Professional creative services including conversion-proven websites, eye-catching branding, stunning graphics, and engaging content with fast delivery.",
+    "services": {
+      "design": {
+        "title": "Design Services",
+        "description": "Eye-catching marketing assets: logos, branding, presentations, social media graphics, illustrations, email designs, packaging, and print materials."
+      },
+      "video": {
+        "title": "Video Editing & Motion",
+        "description": "Engaging video editing and animated graphics for social media content, product demos, promotional campaigns, including logo animations and explainer videos."
+      },
+      "development": {
+        "title": "Web Development",
+        "description": "Beautiful, responsive websites and web applications. Custom development, e-commerce solutions, landing pages, and full-stack applications built with modern technologies."
+      },
+      "content": {
+        "title": "Content Writing",
+        "description": "Professional copywriting services: SEO content, blog posts, marketing copy, product descriptions, email campaigns, and engaging content that converts."
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Get started in minutes with our simple 4-step process",
+    "steps": {
+      "step1": {
+        "title": "Choose your service",
+        "description": "Select Design, Video, Development, or Content Writing based on your business needs."
+      },
+      "step2": {
+        "title": "Submit your requests",
+        "description": "Submit unlimited requests through your dedicated client portal with detailed briefs."
+      },
+      "step3": {
+        "title": "Receive your work",
+        "description": "Get your designs back in 48 hours average, websites in 3-5 days, content in 24 hours."
+      },
+      "step4": {
+        "title": "Approve and download",
+        "description": "Review, request revisions, and download your files or launch your website when ready."
+      }
+    },
+    "cta": "Start your free trial"
+  },
+  "whyChooseUs": {
+    "title": "Why choose us",
+    "subtitle": "Everything you need to scale your creative work without the hassle of hiring, managing, or dealing with unreliable freelancers.",
+    "benefits": {
+      "unlimited": {
+        "title": "Unlimited requests",
+        "description": "Submit as many design, video, development, and content requests as you need. No limits, no extra charges."
+      },
+      "fast": {
+        "title": "Lightning-fast delivery",
+        "description": "Average 48-hour turnaround for designs, 3-5 days for websites. Get your projects done when you need them."
+      },
+      "quality": {
+        "title": "Top-tier quality",
+        "description": "Work with experienced professionals who deliver exceptional results, not junior designers or offshore teams."
+      },
+      "pause": {
+        "title": "Pause or cancel anytime",
+        "description": "Total flexibility with no long-term contracts. Scale up when busy, pause when slow. It's that simple."
+      },
+      "fixed": {
+        "title": "Fixed monthly rate",
+        "description": "One predictable price for unlimited work. No hourly rates, no surprise invoices, no budget overruns."
+      },
+      "unique": {
+        "title": "Unique & custom work",
+        "description": "Every project is crafted specifically for your brand. No templates, no cookie-cutter solutions."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Simple, transparent pricing",
+    "subtitle": "Choose the plan that fits your needs. No hidden fees, no surprises.",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "Save 10%"
+    },
+    "currency": {
+      "usd": "USD",
+      "krw": "KRW"
+    },
+    "plans": {
+      "design": {
+        "name": "Design",
+        "description": "Perfect for businesses needing unlimited graphic design and branding.",
+        "turnaround": "48h average",
+        "features": {
+          "0": "Unlimited graphic design requests",
+          "1": "Logos, branding & social media",
+          "2": "Marketing materials & presentations",
+          "3": "Illustrations & print designs",
+          "4": "2 concurrent projects",
+          "5": "Unlimited revisions",
+          "6": "Pause or cancel anytime"
+        }
+      },
+      "designVideo": {
+        "name": "Design + Video",
+        "description": "Combine graphic design with professional video editing services.",
+        "popular": "Popular",
+        "turnaround": "48h design, 3-5d video",
+        "features": {
+          "0": "Everything in Design plan",
+          "1": "Unlimited video editing requests",
+          "2": "Motion graphics & animations",
+          "3": "Social media video content",
+          "4": "Product demos & explainer videos",
+          "5": "1 design + 1 video concurrent",
+          "6": "Pause or cancel anytime"
+        }
+      },
+      "complete": {
+        "name": "Complete",
+        "description": "Full creative suite: design, video, development, and content writing.",
+        "turnaround": "Varies by service",
+        "features": {
+          "0": "Everything in Design + Video",
+          "1": "Unlimited web development",
+          "2": "Landing pages & websites",
+          "3": "Custom web applications",
+          "4": "Unlimited content writing",
+          "5": "Blog posts, SEO content & copy",
+          "6": "3 concurrent projects total",
+          "7": "Pause or cancel anytime"
+        }
+      }
+    },
+    "common": {
+      "perMonth": "per month, after",
+      "freeTrial": "1 week free trial",
+      "billedAnnually": "Billed {amount} annually",
+      "unlimitedRevisions": "Unlimited revisions",
+      "getStarted": "Get started",
+      "whatsIncluded": "What's included"
+    },
+    "footer": {
+      "secure": "Guaranteed safe & secure checkout",
+      "poweredBy": "Powered by stripe",
+      "disclaimer": "Prices do not include applicable taxes • Trial is limited to 1 project or 1 week, billing starts automatically at the end of the trial period, unless cancelled",
+      "planTitles": {
+        "design": "Design Plan:",
+        "designVideo": "Design + Video Plan:",
+        "complete": "Complete Plan:"
+      },
+      "planDetails": {
+        "design": "2 concurrent design projects",
+        "designVideo": "1 design + 1 video project",
+        "complete": "3 concurrent projects total"
+      },
+      "terms": "All sales are final and non-refundable.",
+      "seeTerms": "See payment terms"
+    }
+  },
+  "reviews": {
+    "title": "Real client reviews",
+    "subtitle": "See what our clients say about working with us",
+    "planTitles": {
+      "design": "Design",
+      "designVideo": "Design + Video",
+      "complete": "Complete"
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Everything you need to know about our services",
+    "questions": {
+      "0": {
+        "question": "What services do you offer?",
+        "answer": "We offer four main services: Graphic Design (unlimited logos, branding, social media graphics), Video Editing (motion graphics, explainer videos, social content), Web Development (custom websites, landing pages, web applications), and Content Writing (SEO content, blog posts, copywriting). You can choose individual services or bundle them together."
+      },
+      "1": {
+        "question": "How does the subscription work?",
+        "answer": "Choose a plan (Design, Design + Video, or Complete), start your 7-day free trial, and submit unlimited requests through your client portal. We'll deliver your projects based on the turnaround times for each service. You can pause or cancel your subscription anytime with no long-term contracts."
+      },
+      "2": {
+        "question": "What's the turnaround time for projects?",
+        "answer": "Design projects: 48 hours average. Video projects: 3-5 days. Website development: 3-7 days depending on complexity. Content writing: 24-48 hours. Rush requests can be accommodated based on availability."
+      },
+      "3": {
+        "question": "How many projects can I work on at once?",
+        "answer": "Design plan: 2 concurrent design projects. Design + Video plan: 1 design + 1 video project simultaneously. Complete plan: 3 concurrent projects across all services (flexible allocation). You can queue unlimited requests."
+      },
+      "4": {
+        "question": "What if I don't like the design?",
+        "answer": "All plans include unlimited revisions. We'll keep refining the work until you're 100% satisfied. Simply provide feedback through your client portal, and we'll make adjustments quickly."
+      },
+      "5": {
+        "question": "Can I pause my subscription?",
+        "answer": "Yes! You can pause your subscription anytime. When paused, your billing cycle stops, and you can resume whenever you're ready. This is perfect for seasonal businesses or when you don't have active projects."
+      },
+      "6": {
+        "question": "Do I own the rights to the work?",
+        "answer": "Absolutely! You own 100% of all deliverables including source files, design files, code, and content. We provide complete copyright transfer with every project."
+      },
+      "7": {
+        "question": "What tools and platforms do you use?",
+        "answer": "Design: Figma, Adobe Creative Suite, Sketch. Video: Adobe Premiere, After Effects, DaVinci Resolve. Development: React, Next.js, Webflow, WordPress. We're flexible and can work with your preferred tools if needed."
+      },
+      "8": {
+        "question": "Is there a minimum commitment?",
+        "answer": "No minimum commitment required. All plans are month-to-month with no long-term contracts. Start with a 7-day free trial and cancel anytime if you're not satisfied."
+      },
+      "9": {
+        "question": "How do I submit requests?",
+        "answer": "After subscribing, you'll get access to your dedicated client portal where you can submit requests, share files, provide feedback, and track project progress. You can also communicate via Slack or email if preferred."
+      }
+    },
+    "cta": {
+      "title": "Still have questions?",
+      "subtitle": "Can't find the answer you're looking for? Our team is here to help.",
+      "button": "Contact us"
+    }
+  },
+  "footer": {
+    "description": "Unlimited creative services for modern businesses. Get professional design, video, development, and content on demand.",
+    "company": {
+      "title": "Company",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "services": "Services",
+      "reviews": "Reviews"
+    },
+    "resources": {
+      "title": "Resources",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "legal": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy"
+    },
+    "copyright": "All rights reserved."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Message",
+    "placeholder": "Tell us about your project...",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We will contact you soon.",
+    "error": "Failed to send message. Please try again."
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Service | Daily Drop",
+      "description": "Read our terms of service to understand your rights and obligations when using Daily Drop."
+    },
+    "badge": "Legal Agreement",
+    "title": "Terms of Service",
+    "subtitle": "Please read these terms carefully before using our services.",
+    "lastUpdated": "Last updated: January 1, 2025",
+    "backButton": "Back to Home",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "introduction": {
+        "title": "Introduction and Acceptance",
+        "content": "Welcome to Daily Drop. By accessing or using our services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services. These terms constitute a legally binding agreement between you and Daily Drop."
+      },
+      "services": {
+        "title": "Description of Services",
+        "content": "Daily Drop provides unlimited creative services including graphic design, video editing, web development, and content writing on a subscription basis. Services are delivered through our online platform. We reserve the right to modify, suspend, or discontinue any part of our services at any time with or without notice."
+      },
+      "subscriptionPayment": {
+        "title": "Subscription and Payment",
+        "content": "Our services are offered on a subscription basis with the following terms:",
+        "items": {
+          "0": {
+            "title": "Subscription Plans",
+            "description": "You can choose from Design, Design + Video, or Complete plans. All plans include a 7-day free trial."
+          },
+          "1": {
+            "title": "Billing",
+            "description": "Subscriptions are billed monthly or annually in advance. Billing occurs on the same day each billing period."
+          },
+          "2": {
+            "title": "Payment Methods",
+            "description": "We accept major credit cards and debit cards. All payments are processed securely through Stripe."
+          },
+          "3": {
+            "title": "Price Changes",
+            "description": "We reserve the right to change our pricing with 30 days notice. Existing subscribers will maintain their current rate until renewal."
+          }
+        }
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property Rights",
+        "content": "Upon full payment, you own 100% of all deliverables including design files, source code, content, and final outputs. We provide complete copyright transfer. However, we retain the right to showcase work in our portfolio unless you request otherwise. You may not resell or redistribute our services or deliverables to third parties."
+      },
+      "userResponsibilities": {
+        "title": "User Responsibilities and Conduct",
+        "content": "As a user of our services, you agree to:",
+        "items": {
+          "0": {
+            "title": "Accurate Information",
+            "description": "Provide accurate and complete information when registering and maintain updated account information."
+          },
+          "1": {
+            "title": "Lawful Use",
+            "description": "Use our services only for lawful purposes and in compliance with all applicable laws."
+          },
+          "2": {
+            "title": "Content Ownership",
+            "description": "Ensure you have the right to use any content you provide to us (text, images, brand materials)."
+          },
+          "3": {
+            "title": "Clear Communication",
+            "description": "Provide clear project briefs and timely feedback to facilitate efficient service delivery."
+          },
+          "4": {
+            "title": "Account Security",
+            "description": "Maintain the confidentiality of your account credentials and notify us immediately of any unauthorized access."
+          }
+        }
+      },
+      "deliveryRevisions": {
+        "title": "Delivery and Revisions",
+        "content": "Average turnaround times are 48 hours for design, 3-5 days for video, 3-7 days for development, and 24-48 hours for content. These are estimates and may vary based on complexity. All plans include unlimited revisions. However, revisions must be related to the original brief. New concepts or scope changes may be treated as new requests. We reserve the right to refuse unreasonable or abusive revision requests."
+      },
+      "termination": {
+        "title": "Termination and Cancellation",
+        "content": "You may cancel your subscription at any time. Cancellations take effect at the end of your current billing period. You will retain access to services until that date. We reserve the right to suspend or terminate accounts for violation of these terms, fraudulent activity, abusive behavior, or non-payment. No refunds will be provided for partial periods upon termination."
+      },
+      "refunds": {
+        "title": "Refund Policy",
+        "content": "All sales are final and non-refundable. We do not provide refunds for unused time in your subscription period. The 7-day free trial allows you to evaluate our services before committing. If you are not satisfied during the trial period, simply cancel before the trial ends and you will not be charged."
+      },
+      "limitation": {
+        "title": "Limitation of Liability",
+        "content": "To the maximum extent permitted by law, Daily Drop shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues. Our total liability shall not exceed the amount you paid us in the 12 months preceding the claim. We do not guarantee uninterrupted or error-free service."
+      },
+      "indemnification": {
+        "title": "Indemnification",
+        "content": "You agree to indemnify and hold Daily Drop harmless from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from your use of our services, violation of these terms, or infringement of any third-party rights through content you provide to us."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We may update these Terms of Service from time to time. Material changes will be notified via email or through our platform. Continued use of services after changes constitutes acceptance of new terms. We encourage you to review these terms periodically."
+      },
+      "governing": {
+        "title": "Governing Law and Disputes",
+        "content": "These terms are governed by the laws of [Your Jurisdiction]. Any disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. You agree to waive any right to a jury trial or to participate in a class action lawsuit."
+      },
+      "contact": {
+        "title": "Contact Information",
+        "content": "For questions about these Terms of Service, please contact us at: Email: legal@dailydrop.com. Address: [Your Company Address]. We will respond to inquiries within 5 business days."
+      }
+    },
+    "cta": {
+      "title": "Questions About Terms?",
+      "subtitle": "Our legal team is here to help clarify any questions about these terms.",
+      "button": "Contact Legal Team"
+    }
+  },
+  "privacyPolicy": {
+    "meta": {
+      "title": "Privacy Policy | Daily Drop",
+      "description": "Learn how Daily Drop collects, uses, and protects your personal information."
+    },
+    "backButton": "Back to Home",
+    "badge": "Your Privacy Matters",
+    "title": "Privacy Policy",
+    "subtitle": "We take your privacy seriously. Learn how we collect, use, and protect your information.",
+    "lastUpdated": "Last updated: January 1, 2025",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Daily Drop ('we', 'us', or 'our') is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our creative services platform. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the site or use our services."
+      },
+      "informationWeCollect": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us, information we obtain automatically when you use our services, and information from third-party sources. The types of information we may collect include:",
+        "items": {
+          "0": {
+            "title": "Personal Information",
+            "description": "Name, email address, phone number, billing address, and payment information when you register for an account or subscribe to our services."
+          },
+          "1": {
+            "title": "Project Information",
+            "description": "Design briefs, content uploads, feedback, and communications related to your projects and requests."
+          },
+          "2": {
+            "title": "Usage Data",
+            "description": "Information about how you access and use our services, including your IP address, browser type, device information, pages visited, and time spent on our platform."
+          }
+        }
+      },
+      "howWeUseInformation": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, process your transactions, communicate with you about your account and projects, send you marketing communications (with your consent), analyze usage patterns to enhance user experience, detect and prevent fraud or abuse, and comply with legal obligations. We never sell your personal information to third parties."
+      },
+      "informationSharing": {
+        "title": "Information Sharing and Disclosure",
+        "content": "We may share your information with service providers who perform services on our behalf, such as payment processors and cloud storage providers; with professional team members working on your projects (designers, developers, writers); when required by law or to protect our rights; in connection with a business transaction such as a merger or acquisition; and with your consent or at your direction. We ensure all third parties are bound by confidentiality agreements."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encryption of data in transit and at rest, regular security assessments, access controls and authentication, secure payment processing through PCI-compliant providers, and regular backups and disaster recovery procedures. However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security."
+      },
+      "yourRights": {
+        "title": "Your Rights and Choices",
+        "content": "Depending on your location, you may have certain rights regarding your personal information:",
+        "items": {
+          "0": {
+            "title": "Access and Portability",
+            "description": "Request access to your personal information and receive a copy in a portable format."
+          },
+          "1": {
+            "title": "Correction",
+            "description": "Request correction of inaccurate or incomplete personal information."
+          },
+          "2": {
+            "title": "Deletion",
+            "description": "Request deletion of your personal information, subject to legal obligations."
+          },
+          "3": {
+            "title": "Restriction",
+            "description": "Request restriction of processing of your personal information."
+          },
+          "4": {
+            "title": "Objection",
+            "description": "Object to processing of your personal information for certain purposes."
+          },
+          "5": {
+            "title": "Withdraw Consent",
+            "description": "Withdraw consent for processing where we rely on consent as the legal basis."
+          }
+        }
+      },
+      "cookies": {
+        "title": "Cookies and Tracking Technologies",
+        "content": "We use cookies and similar tracking technologies to track activity on our platform and store certain information. Cookies are files with small amounts of data. You can instruct your browser to refuse all cookies or indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our service. We use both session cookies (which expire when you close your browser) and persistent cookies (which stay on your device until deleted)."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "Our platform may contain links to third-party websites or integrate with third-party services (such as payment processors, analytics providers, and communication tools). We are not responsible for the privacy practices of these third parties. We encourage you to read their privacy policies. We work with reputable service providers including Stripe for payments, Google Analytics for usage analytics, and Resend for email communications."
+      },
+      "childrenPrivacy": {
+        "title": "Children's Privacy",
+        "content": "Our services are not intended for children under 13 years of age (or 16 in the European Economic Area). We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us, and we will delete such information from our systems."
+      },
+      "changes": {
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. We encourage you to review this Privacy Policy periodically. Your continued use of our services after any changes constitutes your acceptance of the new Privacy Policy."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at: Email: privacy@dailydrop.com. We will respond to your inquiry within 30 days. For data protection matters in the EU, you also have the right to lodge a complaint with your local data protection authority."
+      }
+    },
+    "cta": {
+      "title": "Questions About Your Privacy?",
+      "subtitle": "Our team is here to help. Contact us anytime about your data and privacy.",
+      "button": "Contact Privacy Team"
+    }
+  }
+}

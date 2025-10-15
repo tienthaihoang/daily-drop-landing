@@ -157,7 +157,7 @@ export default function PrivacyPolicyContent() {
                 ))}
               </div>
 
-              <div className="mt-12 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-2xl p-8 border-2 border-purple-200">
+              {/* <div className="mt-12 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-2xl p-8 border-2 border-purple-200">
                 <div className="text-center">
                   <h3 className="text-2xl font-black text-slate-900 mb-3">
                     {t("cta.title")}
@@ -183,7 +183,7 @@ export default function PrivacyPolicyContent() {
                     {t("cta.button")}
                   </a>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

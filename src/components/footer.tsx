@@ -12,7 +12,7 @@ export default function PageFooter() {
   const company = [
     { nameKey: "howItWorks", href: "#how-it-works" },
     { nameKey: "pricing", href: "#pricing" },
-    { nameKey: "services", href: "#services" },
+    { nameKey: "subscription", href: "#subscription" },
     { nameKey: "reviews", href: "#reviews" },
   ];
 

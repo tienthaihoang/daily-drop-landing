@@ -9,102 +9,111 @@ export default function ClientReviews() {
 
   const reviews = [
     {
-      name: "Sarah Johnson",
-      initial: "SJ",
-      service: t("planTitles.designVideo"),
+      name: "Minji Lee",
+      initial: "ML",
+      flag: "🇰🇷",
+      serviceKey: "slot2DesignVideo",
+      positionKey: "marketingManager",
       rating: 5,
       comment:
-        "Outstanding work! The team delivered exactly what we needed for our product launch.",
-      date: "2024-11-15",
-      avatar: null,
+        "The team quickly understood our brand tone and created visuals that felt perfectly local yet premium. Their communication in Notion was clear and professional.",
+      date: "April 12, 2025",
       color: "bg-purple-200 text-purple-700",
+    },
+    {
+      name: "Kenji Sato",
+      initial: "KS",
+      flag: "🇯🇵",
+      serviceKey: "slot1PresentationBranding",
+      positionKey: "brandDirector",
+      rating: 5,
+      comment:
+        "We needed clean investor materials in English and Japanese. DailyDrop handled both design and translation with impressive attention to detail.",
+      date: "March 30, 2025",
+      color: "bg-blue-200 text-blue-700",
+    },
+    {
+      name: "Sarah Johnson",
+      initial: "SJ",
+      flag: "🇸🇬",
+      serviceKey: "slot1Design",
+      positionKey: "creativeLead",
+      rating: 4,
+      comment:
+        "I've worked with many agencies, but this was the first time feedback was implemented overnight. The 48h draft system actually works.",
+      date: "February 18, 2025",
+      color: "bg-pink-200 text-pink-700",
+    },
+    {
+      name: "Eunice Tan",
+      initial: "ET",
+      flag: "🇸🇬",
+      serviceKey: "slot3Complete",
+      positionKey: "headOfMarketing",
+      rating: 5,
+      comment:
+        "Our internal creative team couldn't keep up with regional campaigns. DailyDrop became our external arm — faster, consistent, and always on brand.",
+      date: "January 25, 2025",
+      color: "bg-emerald-200 text-emerald-700",
+    },
+    {
+      name: "Hiroko Yamamoto",
+      initial: "HY",
+      flag: "🇯🇵",
+      serviceKey: "slot2VideoMotion",
+      positionKey: "communicationsManager",
+      rating: 4,
+      comment:
+        "Beautiful motion graphics with subtle typography choices. They even localized subtitles for our Asia launch video.",
+      date: "December 10, 2024",
+      color: "bg-cyan-200 text-cyan-700",
+    },
+    {
+      name: "David Nguyen",
+      initial: "DN",
+      flag: "🇻🇳",
+      serviceKey: "slot1PresentationDocs",
+      positionKey: "corporateAffairsExecutive",
+      rating: 5,
+      comment:
+        "They designed our annual report and visualized complex data into a format our board loved. Professional and dependable team.",
+      date: "November 22, 2024",
+      color: "bg-orange-200 text-orange-700",
+    },
+    {
+      name: "Emily Park",
+      initial: "EP",
+      flag: "🇰🇷",
+      serviceKey: "slot2ContentLocalization",
+      positionKey: "globalMarketingSpecialist",
+      rating: 5,
+      comment:
+        "We run campaigns in both Korean and English — their bilingual copywriting made our tone consistent across platforms.",
+      date: "October 30, 2024",
+      color: "bg-rose-200 text-rose-700",
+    },
+    {
+      name: "Rachel Wong",
+      initial: "RW",
+      flag: "🇸🇬",
+      serviceKey: "slot1DesignBranding",
+      positionKey: "marketingExecutive",
+      rating: 5,
+      comment:
+        "What I like most is the consistency. Even with different designers, the brand visuals always feel unified.",
+      date: "September 15, 2024",
+      color: "bg-indigo-200 text-indigo-700",
     },
     {
       name: "Michael Chen",
       initial: "MC",
-      service: t("planTitles.complete"),
+      flag: "🇨🇳",
+      serviceKey: "slot3Enterprise",
+      positionKey: "ceo",
       rating: 5,
       comment:
-        "Incredible turnaround time and quality. Highly recommend for any startup!",
-      date: "2024-11-12",
-      avatar: null,
-      color: "bg-blue-200 text-blue-700",
-    },
-    {
-      name: "Emma Williams",
-      initial: "EW",
-      service: t("planTitles.design"),
-      rating: 4,
-      comment:
-        "Great designs and fast communication. Will definitely work together again.",
-      date: "2024-11-10",
-      avatar: null,
-      color: "bg-pink-200 text-pink-700",
-    },
-    {
-      name: "David Park",
-      initial: "DP",
-      service: t("planTitles.designVideo"),
-      rating: 5,
-      comment:
-        "Professional team that understands design trends. Our social media engagement increased 300%!",
-      date: "2024-11-08",
-      avatar: null,
-      color: "bg-orange-200 text-orange-700",
-    },
-    {
-      name: "Lisa Anderson",
-      initial: "LA",
-      service: t("planTitles.complete"),
-      rating: 5,
-      comment:
-        "Best investment we made this year. The complete package gave us everything we needed.",
-      date: "2024-11-05",
-      avatar: null,
-      color: "bg-emerald-200 text-emerald-700",
-    },
-    {
-      name: "James Martinez",
-      initial: "JM",
-      service: t("planTitles.design"),
-      rating: 5,
-      comment:
-        "Creative, responsive, and professional. Exceeded our expectations on every project.",
-      date: "2024-11-03",
-      avatar: null,
-      color: "bg-cyan-200 text-cyan-700",
-    },
-    {
-      name: "Rachel Kim",
-      initial: "RK",
-      service: t("planTitles.designVideo"),
-      rating: 5,
-      comment:
-        "The video content they created helped us double our conversion rate. Amazing work!",
-      date: "2024-11-01",
-      avatar: null,
-      color: "bg-rose-200 text-rose-700",
-    },
-    {
-      name: "Tom Bradley",
-      initial: "TB",
-      service: t("planTitles.complete"),
-      rating: 4,
-      comment:
-        "Solid work across all services. Great value for the investment.",
-      date: "2024-10-31",
-      avatar: null,
-      color: "bg-indigo-200 text-indigo-700",
-    },
-    {
-      name: "Sophie Turner",
-      initial: "ST",
-      service: t("planTitles.design"),
-      rating: 5,
-      comment:
-        "Beautiful designs that perfectly captured our brand identity. Thank you!",
-      date: "2024-10-29",
-      avatar: null,
+        "We subscribed for 3 slots and managed parallel projects smoothly. Their PM handled feedback like an in-house manager.",
+      date: "August 28, 2024",
       color: "bg-violet-200 text-violet-700",
     },
   ];
@@ -127,10 +136,7 @@ export default function ClientReviews() {
   };
 
   return (
-    <section
-      id="reviews"
-      className="py-20 px-4 bg-cyan-50 scroll-mt-16"
-    >
+    <section id="reviews" className="py-20 px-4 bg-cyan-50 scroll-mt-16">
       <div className="container mx-auto">
         <div className="grid grid-cols-12 mb-16">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
@@ -157,13 +163,19 @@ export default function ClientReviews() {
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 mb-1">
                         <h3 className="font-bold text-slate-900 truncate">
                           {review.name}
                         </h3>
+                        <span className="text-lg">{review.flag}</span>
                         <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                       </div>
-                      <p className="text-sm text-slate-500">{review.service}</p>
+                      <p className="text-xs text-slate-500 font-semibold mb-0.5">
+                        {t(`services.${review.serviceKey}`)}
+                      </p>
+                      <p className="text-xs text-slate-400">
+                        {t(`positions.${review.positionKey}`)}
+                      </p>
                     </div>
                   </div>
 

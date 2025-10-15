@@ -10,26 +10,44 @@ export default function HeroSection() {
   const services = [
     {
       nameKey: "design",
-      bgColor: "bg-purple-50",
-      textColor: "text-purple-700",
+      bgColor: "bg-lime-50",
+      textColor: "text-lime-700",
       id: "#design",
     },
     {
       nameKey: "video",
-      bgColor: "bg-blue-50",
-      textColor: "text-blue-700",
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-700",
       id: "#video",
     },
     {
       nameKey: "development",
-      bgColor: "bg-emerald-50",
-      textColor: "text-emerald-700",
+      bgColor: "bg-teal-50",
+      textColor: "text-teal-700",
       id: "#development",
     },
     {
       nameKey: "content",
-      bgColor: "bg-amber-50",
-      textColor: "text-amber-700",
+      bgColor: "bg-cyan-50",
+      textColor: "text-cyan-700",
+      id: "#content",
+    },
+    {
+      nameKey: "presentation",
+      bgColor: "bg-lime-50",
+      textColor: "text-lime-700",
+      id: "#presentation",
+    },
+    {
+      nameKey: "qa",
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-700",
+      id: "#qa",
+    },
+    {
+      nameKey: "localization",
+      bgColor: "bg-teal-50",
+      textColor: "text-teal-700",
       id: "#content",
     },
   ];
@@ -95,9 +113,12 @@ export default function HeroSection() {
                   <p className="text-sm md:text-base text-slate-600 font-medium">
                     {t("pricing.cancel")}
                   </p>
+                  <p className="text-xs italic md:text-sm text-slate-600">
+                    {t("pricing.cancelSubtitle")}
+                  </p>
                 </div>
 
-                <button className="group relative bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-purple-300 hover:shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-105 flex items-center gap-2">
+                <button className="group relative bg-[#0B2545] hover:bg-[#0a1f3a] text-white font-bold px-8 py-4 rounded-2xl shadow-xl shadow-purple-300 hover:shadow-2xl hover:shadow-pink-300 transition-all duration-300 hover:scale-105 flex items-center gap-2">
                   {t("pricing.cta")}
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </button>

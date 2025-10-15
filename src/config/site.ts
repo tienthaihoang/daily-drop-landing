@@ -1,6 +1,6 @@
 export const site = {
   routes: [
-    { title: "services", path: "#services" },
+    { title: "subscription", path: "#subscription" },
     { title: "pricing", path: "#pricing" },
     { title: "faq", path: "#faq" },
   ],

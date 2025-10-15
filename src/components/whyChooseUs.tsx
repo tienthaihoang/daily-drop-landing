@@ -1,6 +1,13 @@
 "use client";
 
-import { Award, Clock, Heart, Infinity, Rocket, Sparkles } from "lucide-react";
+import {
+  Award,
+  Clock,
+  DollarSign,
+  RefreshCw,
+  Target,
+  Users,
+} from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function WhyChooseUs() {
@@ -8,40 +15,40 @@ export default function WhyChooseUs() {
 
   const benefits = [
     {
-      icon: <Infinity className="w-10 h-10" />,
+      icon: <RefreshCw className="w-10 h-10" />,
       titleKey: "unlimited",
-      gradient: "from-green-400 via-teal-400 to-cyan-500",
-      bgGradient: "from-green-50 to-teal-100",
+      gradient: "from-[#9FE870] via-emerald-500 to-teal-500",
+      bgGradient: "from-lime-50 to-emerald-100",
     },
     {
-      icon: <Rocket className="w-10 h-10" />,
-      titleKey: "fast",
-      gradient: "from-teal-400 via-cyan-400 to-blue-500",
-      bgGradient: "from-teal-50 to-cyan-100",
+      icon: <Target className="w-10 h-10" />,
+      titleKey: "delivery",
+      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
+      bgGradient: "from-emerald-50 to-teal-100",
     },
     {
       icon: <Award className="w-10 h-10" />,
       titleKey: "quality",
-      gradient: "from-green-400 via-teal-500 to-cyan-600",
-      bgGradient: "from-green-50 to-cyan-100",
+      gradient: "from-teal-500 via-cyan-500 to-blue-500",
+      bgGradient: "from-teal-50 to-cyan-100",
     },
     {
       icon: <Clock className="w-10 h-10" />,
       titleKey: "pause",
-      gradient: "from-teal-400 via-cyan-400 to-blue-500",
-      bgGradient: "from-teal-50 to-cyan-100",
+      gradient: "from-[#9FE870] via-lime-400 to-emerald-400",
+      bgGradient: "from-lime-50 to-emerald-50",
     },
     {
-      icon: <Heart className="w-10 h-10" />,
+      icon: <DollarSign className="w-10 h-10" />,
       titleKey: "fixed",
-      gradient: "from-green-400 via-teal-400 to-cyan-500",
-      bgGradient: "from-green-50 to-teal-100",
+      gradient: "from-emerald-400 via-teal-400 to-cyan-400",
+      bgGradient: "from-emerald-50 to-teal-50",
     },
     {
-      icon: <Sparkles className="w-10 h-10" />,
-      titleKey: "unique",
-      gradient: "from-teal-400 via-cyan-400 to-blue-500",
-      bgGradient: "from-teal-50 to-cyan-100",
+      icon: <Users className="w-10 h-10" />,
+      titleKey: "dedicated",
+      gradient: "from-cyan-400 via-blue-500 to-indigo-500",
+      bgGradient: "from-cyan-50 to-blue-100",
     },
   ];
 

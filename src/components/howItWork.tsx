@@ -86,15 +86,6 @@ export default function HowItWorks() {
             </div>
           </div>
         </div>
-
-        {/* <div className="grid grid-cols-12 mt-12">
-          <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
-            <button className="group bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 text-white font-bold px-10 py-4 rounded-2xl shadow-2xl shadow-purple-300 hover:shadow-pink-300 transition-all duration-300 hover:scale-110 inline-flex items-center gap-3 text-lg">
-              {t("cta", { default: "Start your free trial" })}
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-            </button>
-          </div>
-        </div> */}
       </div>
     </section>
   );

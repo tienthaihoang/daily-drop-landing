@@ -2,8 +2,9 @@
 
 import { Select } from "antd";
 import { ArrowRight, Check } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 export default function PricingPlans() {
@@ -12,13 +13,14 @@ export default function PricingPlans() {
   );
   const [currency, setCurrency] = useState<"USD" | "KRW">("USD");
   const t = useTranslations("pricing");
+  const locale = useLocale();
 
   const plans = useMemo(() => {
     const getFeatures = (planKey: string): string[] => {
       const features = [];
       let index = 0;
 
-      while (index < 8) {
+      while (index < 7) {
         const key = `plans.${planKey}.features.${index}`;
         const translation = t(key);
 
@@ -35,40 +37,40 @@ export default function PricingPlans() {
 
     return [
       {
-        planKey: "design",
-        name: t("plans.design.name"),
-        description: t("plans.design.description"),
-        turnaround: t("plans.design.turnaround"),
-        features: getFeatures("design"),
+        planKey: "starter",
+        name: t("plans.starter.name"),
+        description: t("plans.starter.description"),
+        turnaround: t("plans.starter.turnaround"),
+        features: getFeatures("starter"),
         price: {
-          monthly: { USD: 795, KRW: 1050000 },
-          yearly: { USD: 7950, KRW: 10500000 },
+          monthly: { USD: 2000, KRW: 2854000 },
+          yearly: { USD: 21600, KRW: 30847200 },
         },
         gradient: "from-purple-500 to-pink-500",
         popular: false,
       },
       {
-        planKey: "designVideo",
-        name: t("plans.designVideo.name"),
-        description: t("plans.designVideo.description"),
-        turnaround: t("plans.designVideo.turnaround"),
-        features: getFeatures("designVideo"),
+        planKey: "professional",
+        name: t("plans.professional.name"),
+        description: t("plans.professional.description"),
+        turnaround: t("plans.professional.turnaround"),
+        features: getFeatures("professional"),
         price: {
-          monthly: { USD: 1295, KRW: 1710000 },
-          yearly: { USD: 12950, KRW: 17100000 },
+          monthly: { USD: 2500, KRW: 3567500 },
+          yearly: { USD: 27000, KRW: 38529000 },
         },
         gradient: "from-pink-500 to-orange-500",
         popular: true,
       },
       {
-        planKey: "complete",
-        name: t("plans.complete.name"),
-        description: t("plans.complete.description"),
-        turnaround: t("plans.complete.turnaround"),
-        features: getFeatures("complete"),
+        planKey: "enterprise",
+        name: t("plans.enterprise.name"),
+        description: t("plans.enterprise.description"),
+        turnaround: t("plans.enterprise.turnaround"),
+        features: getFeatures("enterprise"),
         price: {
-          monthly: { USD: 2495, KRW: 3290000 },
-          yearly: { USD: 24950, KRW: 32900000 },
+          monthly: { USD: 3500, KRW: 4994500 },
+          yearly: { USD: 37800, KRW: 53910600 },
         },
         gradient: "from-orange-500 to-red-500",
         popular: false,
@@ -151,7 +153,7 @@ export default function PricingPlans() {
                   {plan.popular && (
                     <div className="absolute -top-3 right-4 z-10">
                       <span className="bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                        {t("plans.designVideo.popular")}
+                        {t("plans.professional.popular")}
                       </span>
                     </div>
                   )}
@@ -224,7 +226,7 @@ export default function PricingPlans() {
                       </span>
                     </div>
 
-                    <button className="w-full group bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
+                    <button className="w-full group bg-[#0B2545] hover:bg-[#0a1f3a] text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
                       {t("common.getStarted")}
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </button>
@@ -288,7 +290,7 @@ export default function PricingPlans() {
 
               <div className="text-xs leading-relaxed max-w-4xl mx-auto text-slate-500 space-y-2">
                 <p>{t("footer.disclaimer")}</p>
-                <p>
+                {/* <p>
                   <span className="font-semibold text-slate-700">
                     {t("footer.planTitles.design")}
                   </span>{" "}
@@ -303,17 +305,17 @@ export default function PricingPlans() {
                     {t("footer.planTitles.complete")}
                   </span>{" "}
                   {t("footer.planDetails.complete")}
-                </p>
+                </p> */}
                 <p>
                   <span className="font-semibold text-slate-700">
                     {t("footer.terms")}
                   </span>{" "}
-                  <a
-                    href="#"
+                  <Link
+                    href={`/${locale}/payment-terms`}
                     className="text-blue-600 underline hover:text-blue-700"
                   >
                     {t("footer.seeTerms")}
-                  </a>
+                  </Link>
                   .
                 </p>
               </div>

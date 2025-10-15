@@ -1,31 +1,35 @@
 {
   "nav": {
-    "services": "Services",
+    "subscription": "Subscription",
     "pricing": "Pricing",
     "faq": "FAQ",
     "contact": "Contact us"
   },
   "hero": {
-    "badge": "⭐ 4.8 Rating · 750+ Projects",
-    "title1": "Creative Services",
-    "title2": "Without Limits",
+    "badge": "Trusted by 750+ teams in Singapore, Japan & Vietnam",
+    "title1": "Build Your Creative Team",
+    "title2": "Without Hiring",
     "subtitle": "Design, video, development & content—all in one subscription. Fixed price. Unlimited requests.",
     "services": {
       "design": "Design",
       "video": "Video",
       "development": "Development",
-      "content": "Content"
+      "content": "Content",
+      "presentation": "Presentation",
+      "qa": "QA",
+      "localization": "Localization"
     },
     "pricing": {
-      "amount": "$795",
+      "amount": "From $2000",
       "period": "/month",
       "cancel": "Cancel anytime · 7-day free trial",
-      "cta": "Get Started"
+      "cancelSubtitle": "(Unlimited revisions per slot · PM & QA included)",
+      "cta": "Start Your Pilot"
     },
     "features": {
-      "delivery": "⚡ 48h delivery",
-      "unlimited": "♾️ Unlimited requests",
-      "team": "🎯 Dedicated team",
+      "delivery": "⚡ PM-coordinated workflow (48h–3d delivery)",
+      "unlimited": "♾️ Unlimited revisions per slot",
+      "team": "🎯 Dedicated PM + Creative Team",
       "quality": "✨ Premium quality"
     }
   },
@@ -41,66 +45,73 @@
       "development": "Development"
     }
   },
-  "ourServices": {
-    "title": "What you get with our services",
-    "subtitle": "Professional creative services including conversion-proven websites, eye-catching branding, stunning graphics, and engaging content with fast delivery.",
-    "services": {
-      "design": {
-        "title": "Design Services",
-        "description": "Eye-catching marketing assets: logos, branding, presentations, social media graphics, illustrations, email designs, packaging, and print materials."
-      },
-      "video": {
-        "title": "Video Editing & Motion",
-        "description": "Engaging video editing and animated graphics for social media content, product demos, promotional campaigns, including logo animations and explainer videos."
-      },
-      "development": {
-        "title": "Web Development",
-        "description": "Beautiful, responsive websites and web applications. Custom development, e-commerce solutions, landing pages, and full-stack applications built with modern technologies."
-      },
-      "content": {
-        "title": "Content Writing",
-        "description": "Professional copywriting services: SEO content, blog posts, marketing copy, product descriptions, email campaigns, and engaging content that converts."
-      }
-    }
-  },
   "howItWorks": {
-    "title": "How it works",
+    "title": "How Your Creative Subscription Works",
     "subtitle": "Get started in minutes with our simple 4-step process",
     "steps": {
       "step1": {
         "title": "Choose your service",
-        "description": "Select Design, Video, Development, or Content Writing based on your business needs."
+        "description": "Select Design, Video, Presentation, Content Writing, or Localization projects that fit your brand goals."
       },
       "step2": {
         "title": "Submit your requests",
         "description": "Submit unlimited requests through your dedicated client portal with detailed briefs."
       },
       "step3": {
-        "title": "Receive your work",
-        "description": "Get your designs back in 48 hours average, websites in 3-5 days, content in 24 hours."
+        "title": "Receive your work (48h First Draft)",
+        "description": "Your PM aligns the project within 4–6 hours, and our team delivers in 2–4 days depending on scope."
       },
       "step4": {
         "title": "Approve and download",
-        "description": "Review, request revisions, and download your files or launch your website when ready."
+        "description": "Review your draft in Notion or Figma, request unlimited revisions within your slot, and get final delivery via Drive/Notion."
       }
-    },
-    "cta": "Start your free trial"
+    }
+  },
+  "ourServices": {
+    "title": "What You Get With Our Subscription",
+    "subtitle": "Professional creative services including conversion-proven websites, eye-catching branding, stunning graphics, and engaging content with fast delivery.",
+    "services": {
+      "design": {
+        "title": "Design & Branding",
+        "description": "Create brand identity, campaign visuals, presentations, and social graphics — all aligned with your style guide."
+      },
+      "video": {
+        "title": "Video & Motion",
+        "description": "Produce short-form videos, promotional clips, motion graphics, and localized subtitles for campaigns."
+      },
+      "development": {
+        "title": "Web & Landing Design",
+        "description": "Design campaign landing visuals, CMS upload assets, and responsive Webflow/Figma templates."
+      },
+      "presentation": {
+        "title": "Presentation & Documents",
+        "description": "Design IR decks, proposals, and data-driven reports with consistent branding and visuals."
+      },
+      "content": {
+        "title": "Content Writing & Localization",
+        "description": "Craft marketing copy, reports, and translated content tailored for global campaigns — including blog posts, emails, and product materials."
+      },
+      "qa": {
+        "title": "Support & QA Ops",
+        "description": "Handle uploads, device testing, analytics, and ongoing quality assurance across all deliverables."
+      }
+    }
   },
   "whyChooseUs": {
     "title": "Why choose us",
     "subtitle": "Everything you need to scale your creative work without the hassle of hiring, managing, or dealing with unreliable freelancers.",
     "benefits": {
       "unlimited": {
-        "title": "Unlimited requests",
-        "description": "Submit as many design, video, development, and content requests as you need. No limits, no extra charges."
+        "title": "Unlimited revisions per slot",
+        "description": "Request as many design or content changes as you need within your active slot — your dedicated PM manages every update seamlessly while maintaining project flow."
       },
-      "fast": {
-        "title": "Lightning-fast delivery",
-        "description": "Average 48-hour turnaround for designs, 3-5 days for websites. Get your projects done when you need them."
+      "delivery": {
+        "title": "PM-coordinated delivery",
+        "description": "Your PM coordinates the project within 4–6 hours after your request, and our creative team delivers the first version in 2–4 days, depending on complexity and scope."
       },
       "quality": {
         "title": "Top-tier quality",
-        "description": "Work with experienced professionals who deliver exceptional results, not junior designers or offshore teams."
+        "description": "Each deliverable passes through a PM & QA review process to ensure brand consistency, clarity, and design precision across every file delivered."
       },
       "pause": {
         "title": "Pause or cancel anytime",
@@ -108,17 +119,17 @@
       },
       "fixed": {
         "title": "Fixed monthly rate",
-        "description": "One predictable price for unlimited work. No hourly rates, no surprise invoices, no budget overruns."
+        "description": "One predictable monthly fee covers your PM, QA, and unlimited revisions — eliminating hidden costs, hourly charges, and budget uncertainty."
       },
-      "unique": {
-        "title": "Unique & custom work",
-        "description": "Every project is crafted specifically for your brand. No templates, no cookie-cutter solutions."
+      "dedicated": {
+        "title": "Dedicated creative team",
+        "description": "Work with a managed creative team — including your PM, designers, and editors — operating as an integrated extension of your brand. We ensure continuity, accountability, and creative consistency without the risk of hiring."
       }
     }
   },
   "pricing": {
     "title": "Simple, transparent pricing",
-    "subtitle": "Choose the plan that fits your needs. No hidden fees, no surprises.",
+    "subtitle": "Choose the slot plan that scales with your creative needs — one predictable monthly fee, no hidden cost.",
     "billing": {
       "monthly": "Monthly",
       "yearly": "Yearly",
@@ -129,48 +140,44 @@
       "krw": "KRW"
     },
     "plans": {
-      "design": {
-        "name": "Design",
-        "description": "Perfect for businesses needing unlimited graphic design and branding.",
+      "starter": {
+        "name": "Starter (1 Slot)",
+        "description": "Best for small teams managing recurring design or social media projects.",
         "turnaround": "48h average",
         "features": {
-          "0": "Unlimited graphic design requests",
-          "1": "Logos, branding & social media",
-          "2": "Marketing materials & presentations",
-          "3": "Illustrations & print designs",
-          "4": "2 concurrent projects",
-          "5": "Unlimited revisions",
-          "6": "Pause or cancel anytime"
+          "0": "1 active slot (1 concurrent project)",
+          "1": "Unlimited revisions within slot",
+          "2": "PM & QA support included",
+          "3": "48h first draft delivery",
+          "4": "Design, Presentation & Branding assets",
+          "5": "Notion + Figma collaboration"
         }
       },
-      "designVideo": {
-        "name": "Design + Video",
-        "description": "Combine graphic design with professional video editing services.",
+      "professional": {
+        "name": "Professional (2 Slots)",
+        "description": "For marketing teams handling multiple campaigns or video + design projects.",
         "popular": "Popular",
         "turnaround": "48h design, 3-5d video",
         "features": {
-          "0": "Everything in Design plan",
-          "1": "Unlimited video editing requests",
-          "2": "Motion graphics & animations",
-          "3": "Social media video content",
-          "4": "Product demos & explainer videos",
-          "5": "1 design + 1 video concurrent",
-          "6": "Pause or cancel anytime"
+          "0": "2 concurrent active slots (run two projects at once)",
+          "1": "Design + Video + Presentation coverage",
+          "2": "48h first draft turnaround",
+          "3": "Unlimited revisions per slot",
+          "4": "Dedicated PM & Creative Team",
+          "5": "Slack / Notion communication channel"
         }
       },
-      "complete": {
-        "name": "Complete",
-        "description": "Full creative suite: design, video, development, and content writing.",
+      "enterprise": {
+        "name": "Enterprise (3 Slots)",
+        "description": "For brands and agencies requiring full creative capacity across campaigns.",
         "turnaround": "Varies by service",
         "features": {
-          "0": "Everything in Design + Video",
-          "1": "Unlimited web development",
-          "2": "Landing pages & websites",
-          "3": "Custom web applications",
-          "4": "Unlimited content writing",
-          "5": "Blog posts, SEO content & copy",
-          "6": "3 concurrent projects total",
-          "7": "Pause or cancel anytime"
+          "0": "3 active slots (design, video, and content simultaneously)",
+          "1": "PM-led dedicated team (PM + Designer + Editor)",
+          "2": "QA & Localization support",
+          "3": "Unlimited revisions within each slot",
+          "4": "Drive & Notion delivery",
+          "5": "Full creative pipeline under one subscription"
         }
       }
     },
@@ -186,16 +193,6 @@
       "secure": "Guaranteed safe & secure checkout",
       "poweredBy": "Powered by stripe",
       "disclaimer": "Prices do not include applicable taxes • Trial is limited to 1 project or 1 week, billing starts automatically at the end of the trial period, unless cancelled",
-      "planTitles": {
-        "design": "Design Plan:",
-        "designVideo": "Design + Video Plan:",
-        "complete": "Complete Plan:"
-      },
-      "planDetails": {
-        "design": "2 concurrent design projects",
-        "designVideo": "1 design + 1 video project",
-        "complete": "3 concurrent projects total"
-      },
       "terms": "All sales are final and non-refundable.",
       "seeTerms": "See payment terms"
     }
@@ -203,10 +200,27 @@
   "reviews": {
     "title": "Real client reviews",
     "subtitle": "See what our clients say about working with us",
-    "planTitles": {
-      "design": "Design",
-      "designVideo": "Design + Video",
-      "complete": "Complete"
+    "services": {
+      "slot2DesignVideo": "Slot 2 – Design + Video",
+      "slot1PresentationBranding": "Slot 1 – Presentation + Branding",
+      "slot1Design": "Slot 1 – Design",
+      "slot3Complete": "Slot 3 – Complete Creative Subscription",
+      "slot2VideoMotion": "Slot 2 – Video + Motion",
+      "slot1PresentationDocs": "Slot 1 – Presentation + Documents",
+      "slot2ContentLocalization": "Slot 2 – Content Writing + Localization",
+      "slot1DesignBranding": "Slot 1 – Design + Branding",
+      "slot3Enterprise": "Slot 3 – Enterprise (Full Team)"
+    },
+    "positions": {
+      "marketingManager": "Marketing Manager",
+      "brandDirector": "Brand Director",
+      "creativeLead": "Creative Lead",
+      "headOfMarketing": "Head of Marketing",
+      "communicationsManager": "Communications Manager",
+      "corporateAffairsExecutive": "Corporate Affairs Executive",
+      "globalMarketingSpecialist": "Global Marketing Specialist",
+      "marketingExecutive": "Marketing Executive",
+      "ceo": "CEO"
     }
   },
   "faq": {
@@ -215,43 +229,43 @@
     "questions": {
       "0": {
         "question": "What services do you offer?",
-        "answer": "We offer four main services: Graphic Design (unlimited logos, branding, social media graphics), Video Editing (motion graphics, explainer videos, social content), Web Development (custom websites, landing pages, web applications), and Content Writing (SEO content, blog posts, copywriting). You can choose individual services or bundle them together."
+        "answer": "We offer two core solutions: Creative Subscription (CaaS) and Talent-as-a-Service (TaaS). Creative Subscription covers all recurring content creation such as design, video, presentation, and localization — delivered through a monthly slot-based plan. Talent-as-a-Service provides dedicated professionals or creative teams to support your brand long-term."
       },
       "1": {
         "question": "How does the subscription work?",
-        "answer": "Choose a plan (Design, Design + Video, or Complete), start your 7-day free trial, and submit unlimited requests through your client portal. We'll deliver your projects based on the turnaround times for each service. You can pause or cancel your subscription anytime with no long-term contracts."
+        "answer": "Each subscription equals one or more active slots. A slot is a dedicated workflow handled by a PM and creative team. Once you subscribe, you can submit unlimited requests through Notion, and your PM will queue, assign, and deliver projects continuously within your active slot. Add more slots anytime for parallel projects."
       },
       "2": {
         "question": "What's the turnaround time for projects?",
-        "answer": "Design projects: 48 hours average. Video projects: 3-5 days. Website development: 3-7 days depending on complexity. Content writing: 24-48 hours. Rush requests can be accommodated based on availability."
+        "answer": "Typical delivery times: Design projects in 48 hours, Video & Motion in 3–5 days, Presentation & Reports in 2–4 days, and Content localization within 24–48 hours. Complex or multi-slot projects will be scheduled by your PM for balanced output speed."
       },
       "3": {
         "question": "How many projects can I work on at once?",
-        "answer": "Design plan: 2 concurrent design projects. Design + Video plan: 1 design + 1 video project simultaneously. Complete plan: 3 concurrent projects across all services (flexible allocation). You can queue unlimited requests."
+        "answer": "Each active slot runs one project at a time. You can submit unlimited requests to your queue — once a project is completed, the next one automatically begins. Multiple slots allow simultaneous production (e.g., 2 slots = design + video at once)."
       },
       "4": {
-        "question": "What if I don't like the design?",
-        "answer": "All plans include unlimited revisions. We'll keep refining the work until you're 100% satisfied. Simply provide feedback through your client portal, and we'll make adjustments quickly."
+        "question": "What if I don't like the design or result?",
+        "answer": "Every plan includes unlimited revisions within your active slot. Our PM reviews your feedback, coordinates revisions with the creative team, and continues refining until you're fully satisfied — no extra cost, no time limit."
       },
       "5": {
         "question": "Can I pause my subscription?",
-        "answer": "Yes! You can pause your subscription anytime. When paused, your billing cycle stops, and you can resume whenever you're ready. This is perfect for seasonal businesses or when you don't have active projects."
+        "answer": "Yes, absolutely. You can pause your plan anytime. While paused, your billing stops, and you can reactivate when ready — ideal for seasonal campaigns or when you don't have ongoing creative work."
       },
       "6": {
         "question": "Do I own the rights to the work?",
-        "answer": "Absolutely! You own 100% of all deliverables including source files, design files, code, and content. We provide complete copyright transfer with every project."
+        "answer": "Yes, 100%. All design files, documents, videos, and source materials we produce are fully yours. Copyright and commercial usage rights are transferred to you upon delivery."
       },
       "7": {
         "question": "What tools and platforms do you use?",
-        "answer": "Design: Figma, Adobe Creative Suite, Sketch. Video: Adobe Premiere, After Effects, DaVinci Resolve. Development: React, Next.js, Webflow, WordPress. We're flexible and can work with your preferred tools if needed."
+        "answer": "We primarily use Figma, Adobe Creative Suite, After Effects, and DaVinci Resolve for design and motion work. For collaboration, we operate through Notion, Slack, and Google Drive. You'll have direct access to monitor progress and provide feedback anytime."
       },
       "8": {
         "question": "Is there a minimum commitment?",
-        "answer": "No minimum commitment required. All plans are month-to-month with no long-term contracts. Start with a 7-day free trial and cancel anytime if you're not satisfied."
+        "answer": "No minimum commitment. All plans operate on 30-day terms with flexible renewals. You can subscribe monthly, quarterly, or semi-annually — whichever suits your workflow best."
       },
       "9": {
         "question": "How do I submit requests?",
-        "answer": "After subscribing, you'll get access to your dedicated client portal where you can submit requests, share files, provide feedback, and track project progress. You can also communicate via Slack or email if preferred."
+        "answer": "Once onboarded, you'll receive access to your Notion workspace where you can create tasks, upload files, and set priorities. Your dedicated PM will manage the workflow, assign the right designer or editor, and keep updates transparent through Notion or Slack."
       }
     },
     "cta": {
@@ -261,12 +275,12 @@
     }
   },
   "footer": {
-    "description": "Unlimited creative services for modern businesses. Get professional design, video, development, and content on demand.",
+    "description": "Slot-based creative subscription serving teams across Singapore, Japan & Vietnam. Get PM-coordinated design, video, presentation, and localization — delivered through Notion with 48h–5d turnaround. No hiring, no freelancers, just dedicated creative workflows.",
     "company": {
       "title": "Company",
       "howItWorks": "How It Works",
       "pricing": "Pricing",
-      "services": "Services",
+      "subscription": "Subscription",
       "reviews": "Reviews"
     },
     "resources": {
@@ -504,6 +518,137 @@
       "title": "Questions About Your Privacy?",
       "subtitle": "Our team is here to help. Contact us anytime about your data and privacy.",
       "button": "Contact Privacy Team"
+    }
+  },
+  "paymentTerms": {
+    "meta": {
+      "title": "Payment Terms | Daily Drop",
+      "description": "Review our payment terms, billing policies, and subscription details."
+    },
+    "badge": "Payment Policy",
+    "title": "Payment Terms",
+    "subtitle": "Please review our payment terms and billing policies carefully.",
+    "lastUpdated": "Last updated: January 1, 2025",
+    "backButton": "Back to Home",
+    "tableOfContents": "Table of Contents",
+    "sections": {
+      "acceptedPayments": {
+        "title": "Accepted Payment Methods",
+        "content": "We accept all major credit cards and debit cards through our secure payment processor, Stripe. Payment methods include Visa, Mastercard, American Express, JCB, Discover, Diners Club, and UnionPay. All payment information is encrypted and processed securely through industry-standard SSL technology."
+      },
+      "billingCycle": {
+        "title": "Billing Cycle and Subscription Plans",
+        "content": "Subscriptions are billed on a recurring basis according to your chosen plan:",
+        "items": {
+          "0": {
+            "title": "Monthly Billing",
+            "description": "Charged every 30 days from your subscription start date. Your billing date remains consistent each month."
+          },
+          "1": {
+            "title": "Quarterly Billing",
+            "description": "Charged every 90 days with a small discount. Ideal for medium-term projects."
+          },
+          "2": {
+            "title": "Semi-Annual Billing",
+            "description": "Charged every 6 months with additional savings. Best for long-term partnerships."
+          },
+          "3": {
+            "title": "Automatic Renewal",
+            "description": "All subscriptions automatically renew unless cancelled before the next billing date."
+          }
+        }
+      },
+      "freeTrial": {
+        "title": "7-Day Free Trial",
+        "content": "All new subscriptions include a 7-day free trial period. During this trial, you have full access to your chosen plan's features. You will not be charged until the trial period ends. To avoid charges, cancel before the trial ends. The trial is limited to one project or one week of service, whichever comes first."
+      },
+      "pricing": {
+        "title": "Pricing and Plans",
+        "content": "Our pricing is transparent and straightforward:",
+        "items": {
+          "0": {
+            "title": "Slot-Based Pricing",
+            "description": "Starting from $2,000/month per active slot. Each slot represents a dedicated PM-coordinated workflow."
+          },
+          "1": {
+            "title": "Multi-Slot Discounts",
+            "description": "Volume discounts available for teams subscribing to 3 or more slots simultaneously."
+          },
+          "2": {
+            "title": "Currency Options",
+            "description": "We bill in USD and KRW. Prices may vary based on exchange rates and local tax requirements."
+          },
+          "3": {
+            "title": "Price Changes",
+            "description": "We reserve the right to adjust pricing with 30 days advance notice. Existing subscribers maintain their rate until the next renewal period."
+          }
+        }
+      },
+      "refunds": {
+        "title": "Refund and Non-Refundable Policy",
+        "content": "All sales are final and non-refundable. We do not provide refunds for partial billing periods, unused time, or dissatisfaction with services. The 7-day free trial period allows you to evaluate our services risk-free before committing to a paid subscription. If you cancel during the trial, you will not be charged."
+      },
+      "pauseCancellation": {
+        "title": "Pause and Cancellation Policy",
+        "content": "You have full flexibility to manage your subscription:",
+        "items": {
+          "0": {
+            "title": "Pause Subscription",
+            "description": "Pause your subscription at any time. While paused, billing stops and you retain access until the end of your current period. Reactivate anytime to resume services."
+          },
+          "1": {
+            "title": "Cancel Subscription",
+            "description": "Cancel anytime before your next billing date. You retain full access until the end of your paid period. No refunds for remaining time."
+          },
+          "2": {
+            "title": "Cancellation Process",
+            "description": "Request cancellation through your Notion workspace or by emailing billing@dailydrop.com at least 24 hours before your renewal date."
+          }
+        }
+      },
+      "paymentSecurity": {
+        "title": "Payment Security",
+        "content": "Your payment information is fully secure. We use Stripe, a PCI-DSS Level 1 certified payment processor, to handle all transactions. We never store your complete credit card information on our servers. All payment data is encrypted using industry-standard 256-bit SSL encryption during transmission."
+      },
+      "taxesInvoices": {
+        "title": "Taxes and Invoices",
+        "content": "Prices do not include applicable taxes unless otherwise stated. You are responsible for any sales tax, VAT, GST, or other local taxes required in your jurisdiction. Invoices are automatically generated and sent to your registered email address after each successful payment. Invoices can also be accessed through your Notion workspace."
+      },
+      "subscriptionChanges": {
+        "title": "Upgrading and Downgrading",
+        "content": "You can change your subscription plan at any time:",
+        "items": {
+          "0": {
+            "title": "Upgrading",
+            "description": "Upgrade to add more slots anytime. You will be charged a prorated amount for the remaining period."
+          },
+          "1": {
+            "title": "Downgrading",
+            "description": "Downgrade to fewer slots or a different plan. Changes take effect at your next billing cycle. No refunds for downgrades."
+          },
+          "2": {
+            "title": "Plan Changes",
+            "description": "Contact your PM or email billing@dailydrop.com to request plan changes."
+          }
+        }
+      },
+      "latePayment": {
+        "title": "Late Payment and Failed Transactions",
+        "content": "If a payment fails, we will attempt to process it again within 3 days. If payment continues to fail, your account will be suspended until payment is successful. You will receive email notifications before suspension. During suspension, you cannot access services or submit new requests. Once payment is resolved, access is restored immediately."
+      },
+      "disputeResolution": {
+        "title": "Payment Disputes and Chargebacks",
+        "content": "If you have concerns about a charge, please contact us at billing@dailydrop.com before initiating a chargeback. Chargebacks result in immediate account suspension and may incur additional fees. We will work with you to resolve any legitimate billing concerns promptly and fairly."
+      },
+      "contact": {
+        "title": "Billing Support",
+        "content": "For any billing questions, payment issues, or invoice requests, please contact: Email: billing@dailydrop.com. Response time: Within 24 hours on business days. Our team is here to help resolve any payment-related concerns quickly."
+      }
+    },
+    "cta": {
+      "title": "Questions About Payments?",
+      "subtitle": "Our billing team is ready to help clarify any payment or subscription questions.",
+      "button": "Contact Billing Team"
     }
   }
 }

@@ -25,7 +25,6 @@ export default function PaymentTermsContent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-lime-50 via-green-50 to-emerald-50">
-      {/* Back Button - Fixed */}
       <div className="fixed top-10 left-4 z-50">
         <Link
           href={`/${locale}`}
@@ -36,7 +35,6 @@ export default function PaymentTermsContent() {
         </Link>
       </div>
 
-      {/* Hero Section */}
       <div className="bg-gradient-to-br from-lime-50 via-green-50 to-emerald-50 py-20 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-12">
@@ -71,11 +69,9 @@ export default function PaymentTermsContent() {
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="py-16 px-4">
         <div className="container mx-auto">
           <div className="grid grid-cols-12 gap-8">
-            {/* Table of Contents (Left side) */}
             <div className="hidden lg:block lg:col-span-3 lg:col-start-2">
               <div className="sticky top-24">
                 <div className="bg-white rounded-2xl p-6 border-2 border-lime-200 shadow-sm">
@@ -97,14 +93,9 @@ export default function PaymentTermsContent() {
               </div>
             </div>
 
-            {/* Main Content Sections */}
             <div className="col-span-12 lg:col-span-7">
               {sections.map((section, idx) => (
-                <section
-                  key={idx}
-                  id={section}
-                  className="mb-12 scroll-mt-24"
-                >
+                <section key={idx} id={section} className="mb-12 scroll-mt-24">
                   <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow">
                     <h2 className="text-3xl font-black text-slate-900 mb-6 flex items-center gap-3">
                       <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-lime-400 to-emerald-500 text-white text-lg font-bold">

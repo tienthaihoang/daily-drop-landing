@@ -24,7 +24,6 @@ export default function PrivacyPolicyContent() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-blue-50">
-      {/* Back Button - Fixed with locale */}
       <div className="fixed top-10 left-4 z-50">
         <Link
           href={`/${locale}`}

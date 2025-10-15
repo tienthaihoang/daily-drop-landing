@@ -186,7 +186,7 @@
       "freeTrial": "1주일 무료 체험",
       "billedAnnually": "연간 {amount} 청구",
       "unlimitedRevisions": "무제한 수정",
-      "getStarted": "시작하기",
+      "cta": "파일럿 시작",
       "whatsIncluded": "포함 내용"
     },
     "footer": {

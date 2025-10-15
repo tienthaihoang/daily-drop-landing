@@ -227,7 +227,7 @@ export default function PricingPlans() {
                     </div>
 
                     <button className="w-full group bg-[#0B2545] hover:bg-[#0a1f3a] text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
-                      {t("common.getStarted")}
+                      {t("common.cta")}
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </button>
 

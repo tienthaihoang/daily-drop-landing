@@ -3,7 +3,7 @@ import FAQSection from "@/components/faq";
 import PageFooter from "@/components/footer";
 import Hero from "@/components/hero";
 import HowItWorks from "@/components/howItWork";
-import ImageGallery from "@/components/imageGallary";
+import ImageGallery from "@/components/imageGallery";
 import Navbar from "@/components/navbar";
 import OurServices from "@/components/ourServices";
 import PricingPlans from "@/components/pricingPlans";

@@ -12,10 +12,13 @@ html {
   }
 
   100% {
-    transform: translateX(calc(-384px * 8 - 24px * 8));
+    transform: translateX(-50%);
   }
 }
 
 .animate-scroll {
+  display: flex;
+  gap: 1rem;
+  will-change: transform;
   animation: scroll 30s linear infinite;
 }

@@ -12,7 +12,7 @@ export default function ImageGallery() {
     () => [
       {
         id: 1,
-        url: "/imageGallery/content-1.png",
+        url: "/imageGallery/design-1.jpg",
         titleKey: "design",
       },
       {
@@ -38,7 +38,7 @@ export default function ImageGallery() {
       },
       {
         id: 7,
-        url: "/imageGallery/content-2.png",
+        url: "/imageGallery/design-2.jpg",
         titleKey: "design",
       },
       {
@@ -72,7 +72,7 @@ export default function ImageGallery() {
     <div className="w-full py-20 overflow-hidden">
       <div className="relative w-full">
         <div
-          className="flex gap-6 animate-scroll"
+          className="w-max animate-scroll"
           style={{
             animationPlayState: isHovered ? "paused" : "running",
           }}
@@ -90,7 +90,7 @@ export default function ImageGallery() {
                 width={380}
                 height={280}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                priority={idx < 8}
+                priority={idx < 6}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-6 left-6">

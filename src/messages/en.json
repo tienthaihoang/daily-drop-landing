@@ -9,45 +9,42 @@
     "badge": "Trusted by 750+ teams in Singapore, Japan & Vietnam",
     "title1": "Build Your Creative Team",
     "title2": "Without Hiring",
-    "subtitle": "Design, video, development & content—all in one subscription. Fixed price. Unlimited requests.",
+    "subtitle": "Design, video, content, and localization — all managed under one creative system. Fixed monthly plans. Unlimited requests.",
     "services": {
       "design": "Design",
       "video": "Video",
-      "development": "Development",
       "content": "Content",
       "presentation": "Presentation",
       "qa": "QA",
       "localization": "Localization"
     },
     "pricing": {
-      "amount": "From $2000",
+      "amount": "From $1500",
       "period": "/month",
       "cancel": "Cancel anytime · 7-day free trial",
       "cancelSubtitle": "(Unlimited revisions per slot · PM & QA included)",
-      "cta": "Start Your Pilot"
+      "cta": "Start Your 1-Week Pilot"
     },
     "features": {
-      "delivery": "⚡ PM-coordinated workflow (48h–3d delivery)",
-      "unlimited": "♾️ Unlimited revisions per slot",
-      "team": "🎯 Dedicated PM + Creative Team",
+      "delivery": "⚡ PM-coordinated workflow (48h–3d turnaround)",
+      "unlimited": "♾️ Unlimited revisions & Structured feedback",
+      "team": "🎯 Dedicated PM + Verified creative team",
       "quality": "✨ Premium quality"
     }
   },
   "gallery": {
     "titles": {
-      "creativeDesign": "Creative Design",
-      "brandIdentity": "Brand Identity",
-      "digitalMarketing": "Digital Marketing",
-      "webDesign": "Web Design",
-      "uiuxDesign": "UI/UX Design",
-      "photography": "Photography",
-      "teamWork": "Team Work",
-      "development": "Development"
+      "design": "Design",
+      "video": "Video Production",
+      "content": "Content Creation",
+      "presentation": "Presentation Design",
+      "qa": "Quality Assurance",
+      "localization": "Localization"
     }
   },
   "howItWorks": {
     "title": "How Your Creative Subscription Works",
-    "subtitle": "Get started in minutes with our simple 4-step process",
+    "subtitle": "Get started in minutes with our simple **managed 4-step workflow**",
     "steps": {
       "step1": {
         "title": "Choose your service",
@@ -55,29 +52,29 @@
       },
       "step2": {
         "title": "Submit your requests",
-        "description": "Submit unlimited requests through your dedicated client portal with detailed briefs."
+        "description": "Submit unlimited requests through your dedicated Notion or Slack channel, guided by your PM for clarity."
       },
       "step3": {
-        "title": "Receive your work (48h First Draft)",
-        "description": "Your PM aligns the project within 4–6 hours, and our team delivers in 2–4 days depending on scope."
+        "title": "Receive your work (at least 48h First Draft)",
+        "description": "Your PM reviews your brief within 4–6 hours and coordinates your team. First draft in *at least 48 hours* for design projects or 3–5 days for video projects, depending on scope."
       },
       "step4": {
         "title": "Approve and download",
-        "description": "Review your draft in Notion or Figma, request unlimited revisions within your slot, and get final delivery via Drive/Notion."
+        "description": "Review your draft in Notion or Figma, share feedback directly, and receive final delivery via Drive or Notion — fully managed by your PM."
       }
     }
   },
   "ourServices": {
     "title": "What You Get With Our Subscription",
-    "subtitle": "Professional creative services including conversion-proven websites, eye-catching branding, stunning graphics, and engaging content with fast delivery.",
+    "subtitle": "Professional creative services across design, video, presentation, and localization — delivered fast and fully managed by your dedicated PM.",
     "services": {
       "design": {
         "title": "Design & Branding",
-        "description": "Create brand identity, campaign visuals, presentations, and social graphics — all aligned with your style guide."
+        "description": "Create brand identity, campaign visuals, social media assets, and marketing materials — all aligned with your style guide and brand tone."
       },
       "video": {
         "title": "Video & Motion",
-        "description": "Produce short-form videos, promotional clips, motion graphics, and localized subtitles for campaigns."
+        "description": "Produce short-form videos, promotional clips, motion graphics, and localized subtitles for campaigns.Produce short-form videos, motion graphics, and promotional clips for campaigns — including subtitle and localization support."
       },
       "development": {
         "title": "Web & Landing Design",
@@ -85,51 +82,51 @@
       },
       "presentation": {
         "title": "Presentation & Documents",
-        "description": "Design IR decks, proposals, and data-driven reports with consistent branding and visuals."
+        "description": "Design pitch decks, IR reports, proposals, and internal documents with consistent visuals and storytelling."
       },
       "content": {
         "title": "Content Writing & Localization",
-        "description": "Craft marketing copy, reports, and translated content tailored for global campaigns — including blog posts, emails, and product materials."
+        "description": "Craft marketing copy, reports, and localized content tailored for global campaigns — from blog posts and press materials to product pages and subtitles."
       },
       "qa": {
         "title": "Support & QA Ops",
-        "description": "Handle uploads, device testing, analytics, and ongoing quality assurance across all deliverables."
+        "description": "Manage QA, asset delivery, analytics checks, and cross-platform review — ensuring every deliverable meets Funnel’s quality standard."
       }
     }
   },
   "whyChooseUs": {
     "title": "Why choose us",
-    "subtitle": "Everything you need to scale your creative work without the hassle of hiring, managing, or dealing with unreliable freelancers.",
+    "subtitle": "Everything you need to scale your creative output — without hiring headaches, management overhead, or unpredictable freelancers.",
     "benefits": {
       "unlimited": {
         "title": "Unlimited revisions per slot",
-        "description": "Request as many design or content changes as you need within your active slot — your dedicated PM manages every update seamlessly while maintaining project flow."
+        "description": "Request as many design or content changes as needed — your PM keeps revisions structured and ensures every update stays on track."
       },
       "delivery": {
         "title": "PM-coordinated delivery",
-        "description": "Your PM coordinates the project within 4–6 hours after your request, and our creative team delivers the first version in 2–4 days, depending on complexity and scope."
+        "description": "Your PM coordinates your request within 4–6 hours and manages delivery from start to handoff. First draft in at least 48h for design, 3–5 days for video."
       },
       "quality": {
         "title": "Top-tier quality",
-        "description": "Each deliverable passes through a PM & QA review process to ensure brand consistency, clarity, and design precision across every file delivered."
+        "description": "Every deliverable goes through a dual-check system by PM and QA — ensuring clarity, consistency, and visual precision in every output."
       },
       "pause": {
         "title": "Pause or cancel anytime",
-        "description": "Total flexibility with no long-term contracts. Scale up when busy, pause when slow. It's that simple."
+        "description": "Total flexibility — no long-term contracts, no penalties. Scale up, pause, or cancel whenever your workload changes."
       },
       "fixed": {
         "title": "Fixed monthly rate",
-        "description": "One predictable monthly fee covers your PM, QA, and unlimited revisions — eliminating hidden costs, hourly charges, and budget uncertainty."
+        "description": "One clear monthly fee covers your PM, QA, and creative team — no hidden costs, hourly charges, or complex add-ons."
       },
       "dedicated": {
         "title": "Dedicated creative team",
-        "description": "Work with a managed creative team — including your PM, designers, and editors — operating as an integrated extension of your brand. We ensure continuity, accountability, and creative consistency without the risk of hiring."
+        "description": "Work with a managed creative team — including your PM, designers, editors, and QA — operating as a seamless extension of your brand. We ensure consistency, accountability, and reliable quality at every stage."
       }
     }
   },
   "pricing": {
-    "title": "Simple, transparent pricing",
-    "subtitle": "Choose the slot plan that scales with your creative needs — one predictable monthly fee, no hidden cost.",
+    "title": "Simple pricing",
+    "subtitle": "Build your creative team — without hiring. Predictable monthly plans designed for speed, quality, and managed delivery.",
     "billing": {
       "monthly": "Monthly",
       "yearly": "Yearly",
@@ -141,53 +138,78 @@
     },
     "plans": {
       "starter": {
-        "name": "Starter (1 Slot)",
-        "description": "Best for small teams managing recurring design or social media projects.",
-        "turnaround": "48h average",
-        "features": {
-          "0": "1 active slot (1 concurrent project)",
-          "1": "Unlimited revisions within slot",
-          "2": "PM & QA support included",
-          "3": "48h first draft delivery",
-          "4": "Design, Presentation & Branding assets",
-          "5": "Notion + Figma collaboration"
-        }
+        "name": "💼 Starter Plan",
+        "description": "*(Perfect for small teams or startups needing consistent creative support)*",
+        "services": {
+          "0": "Branding, logo, and key visual design",
+          "1": "Marketing & social media graphics",
+          "2": "Business presentations & pitch decks",
+          "3": "Landing pages & web layout (Figma / Canva)",
+          "4": "Product & packaging design",
+          "5": "Light motion graphics (GIF, reels, animated posts)",
+          "6": "File delivery via Drive & Notion"
+        },
+        "management": {
+          "0": "1 project at a time (1 active slot)",
+          "1": "48h our average turnaround for designs",
+          "2": "Unlimited revisions within the slot",
+          "3": "PM + QA support included",
+          "4": "Weekly progress reports"
+        },
+        "cta": "Start your 1-week free trial"
       },
       "professional": {
-        "name": "Professional (2 Slots)",
-        "description": "For marketing teams handling multiple campaigns or video + design projects.",
-        "popular": "Popular",
-        "turnaround": "48h design, 3-5d video",
-        "features": {
-          "0": "2 concurrent active slots (run two projects at once)",
-          "1": "Design + Video + Presentation coverage",
-          "2": "48h first draft turnaround",
-          "3": "Unlimited revisions per slot",
-          "4": "Dedicated PM & Creative Team",
-          "5": "Slack / Notion communication channel"
-        }
+        "name": "🚀 Professional Plan",
+        "description": "*(For marketing teams handling multiple campaigns or video + design projects)*",
+        "best": "Best",
+        "services": {
+          "0": "Everything in *Starter*, plus:",
+          "1": "Short-form video editing (3–5 day turnaround)",
+          "2": "Campaign visuals & ad creatives (Meta / Google / LinkedIn)",
+          "3": "Presentation & deck template design",
+          "4": "Web & product landing pages (no-code ready)",
+          "5": "Brand extensions, packaging, and layout systems",
+          "6": "Multi-channel campaign rollout materials"
+        },
+        "management": {
+          "0": "2 projects at a time (2 active slots)",
+          "1": "Dedicated PM + Creative Team",
+          "2": "Unlimited revisions per slot",
+          "3": "Slack / Notion collaboration workspace",
+          "4": "QA check & structured feedback loop",
+          "5": "Weekly content calendar & report"
+        },
+        "cta": "Best Value — Start your plan"
       },
       "enterprise": {
-        "name": "Enterprise (3 Slots)",
-        "description": "For brands and agencies requiring full creative capacity across campaigns.",
-        "turnaround": "Varies by service",
-        "features": {
-          "0": "3 active slots (design, video, and content simultaneously)",
-          "1": "PM-led dedicated team (PM + Designer + Editor)",
-          "2": "QA & Localization support",
-          "3": "Unlimited revisions within each slot",
-          "4": "Drive & Notion delivery",
-          "5": "Full creative pipeline under one subscription"
-        }
+        "name": "🏢 Enterprise Plan",
+        "description": "*(For agencies or enterprises needing full creative capacity across design, video, and localization)*",
+        "services": {
+          "0": "Everything in *Professional*, plus:",
+          "1": "Motion graphics & advanced video editing",
+          "2": "UI/UX design & digital asset systems",
+          "3": "Multilingual localization (EN / KR / VN / JP / CH)",
+          "4": "Full campaign rollout (design + video + copy)",
+          "5": "Product visualization & marketing site support",
+          "6": "Data dashboard & analytics visualization"
+        },
+        "management": {
+          "0": "3 projects at a time (3 active slots)",
+          "1": "Dedicated PM + Designer + Editor team",
+          "2": "Unlimited revisions per slot",
+          "3": "QA & localization quality control",
+          "4": "Priority queue + same-day feedback channel",
+          "5": "Biweekly performance report & review"
+        },
+        "cta": "Talk to Sales"
       }
     },
     "common": {
-      "perMonth": "per month, after",
+      "perMonth": "per month",
       "freeTrial": "1 week free trial",
       "billedAnnually": "Billed {amount} annually",
-      "unlimitedRevisions": "Unlimited revisions",
-      "cta": "Start Your Pilot",
-      "whatsIncluded": "What's included"
+      "services": "Services Included",
+      "management": "Management & Support"
     },
     "footer": {
       "secure": "Guaranteed safe & secure checkout",
@@ -200,6 +222,7 @@
   "reviews": {
     "title": "Real client reviews",
     "subtitle": "See what our clients say about working with us",
+    "badge": "Trusted by 100+ teams across multiple regions",
     "services": {
       "slot2DesignVideo": "Slot 2 – Design + Video",
       "slot1PresentationBranding": "Slot 1 – Presentation + Branding",
@@ -229,43 +252,53 @@
     "questions": {
       "0": {
         "question": "What services do you offer?",
-        "answer": "We offer two core solutions: Creative Subscription (CaaS) and Talent-as-a-Service (TaaS). Creative Subscription covers all recurring content creation such as design, video, presentation, and localization — delivered through a monthly slot-based plan. Talent-as-a-Service provides dedicated professionals or creative teams to support your brand long-term."
+        "answer1": "We currently focus on our **Creative Subscription (CaaS)** — a managed creative team subscription for design, video, presentation, and localization.",
+        "answer2": "Each plan includes PM, QA, and unlimited revisions under one predictable monthly fee. *(Talent-as-a-Service programs are available upon custom request).*"
       },
       "1": {
         "question": "How does the subscription work?",
-        "answer": "Each subscription equals one or more active slots. A slot is a dedicated workflow handled by a PM and creative team. Once you subscribe, you can submit unlimited requests through Notion, and your PM will queue, assign, and deliver projects continuously within your active slot. Add more slots anytime for parallel projects."
+        "answer1": "Each subscription equals one or more active slots.",
+        "answer2": "A slot is a managed workflow handled by a PM and creative team. You can submit unlimited requests via **Notion or Slack**, and your PM will assign and track progress for each project. Add more slots anytime for parallel production."
       },
       "2": {
         "question": "What's the turnaround time for projects?",
-        "answer": "Typical delivery times: Design projects in 48 hours, Video & Motion in 3–5 days, Presentation & Reports in 2–4 days, and Content localization within 24–48 hours. Complex or multi-slot projects will be scheduled by your PM for balanced output speed."
+        "answer1": "Typical delivery times:",
+        "answer2": " • *Design projects* in **at least 48 hours**",
+        "answer3": " • *Video & Motion* in **3–5 days**",
+        "answer4": " • *Presentations & Reports* in **2–4 days**",
+        "answer5": " • *Content Localization* in **~48 hours**",
+        "answer6": "Complex or multi-slot projects may take longer, scheduled by your PM for balanced output speed."
       },
       "3": {
         "question": "How many projects can I work on at once?",
-        "answer": "Each active slot runs one project at a time. You can submit unlimited requests to your queue — once a project is completed, the next one automatically begins. Multiple slots allow simultaneous production (e.g., 2 slots = design + video at once)."
+        "answer1": "Each active slot runs one project at a time. You can submit unlimited requests to your queue — once a project is completed, the next one automatically begins. Multiple slots allow simultaneous production (e.g., **2 slots = design + video at once**)."
       },
       "4": {
         "question": "What if I don't like the design or result?",
-        "answer": "Every plan includes unlimited revisions within your active slot. Our PM reviews your feedback, coordinates revisions with the creative team, and continues refining until you're fully satisfied — no extra cost, no time limit."
+        "answer1": "Every plan includes **unlimited revisions** within your slot.",
+        "answer2": "Your PM and QA review feedback, coordinate revisions with the creative team, and refine until you’re fully satisfied — no extra cost, no time limit."
       },
       "5": {
         "question": "Can I pause my subscription?",
-        "answer": "Yes, absolutely. You can pause your plan anytime. While paused, your billing stops, and you can reactivate when ready — ideal for seasonal campaigns or when you don't have ongoing creative work."
+        "answer1": "Yes, absolutely. You can pause your plan anytime. While paused, your billing stops, and you can reactivate when ready — ideal for seasonal campaigns or when you don't have ongoing creative work."
       },
       "6": {
         "question": "Do I own the rights to the work?",
-        "answer": "Yes, 100%. All design files, documents, videos, and source materials we produce are fully yours. Copyright and commercial usage rights are transferred to you upon delivery."
+        "answer1": "Yes, 100%. All design files, documents, videos, and source materials we produce are fully yours. Copyright and commercial usage rights are transferred to you upon delivery."
       },
       "7": {
         "question": "What tools and platforms do you use?",
-        "answer": "We primarily use Figma, Adobe Creative Suite, After Effects, and DaVinci Resolve for design and motion work. For collaboration, we operate through Notion, Slack, and Google Drive. You'll have direct access to monitor progress and provide feedback anytime."
+        "answer1": "We primarily use **Figma, Adobe Creative Suite, After Effects, and DaVinci Resolve** for design and motion work.",
+        "answer2": "For collaboration, we operate through **Notion, Slack, and Google Drive** — giving you full visibility into project progress and files."
       },
       "8": {
         "question": "Is there a minimum commitment?",
-        "answer": "No minimum commitment. All plans operate on 30-day terms with flexible renewals. You can subscribe monthly, quarterly, or semi-annually — whichever suits your workflow best."
+        "answer1": "No minimum commitment. All plans run on a **flexible monthly subscription** — cancel, pause, or upgrade anytime."
       },
       "9": {
         "question": "How do I submit requests?",
-        "answer": "Once onboarded, you'll receive access to your Notion workspace where you can create tasks, upload files, and set priorities. Your dedicated PM will manage the workflow, assign the right designer or editor, and keep updates transparent through Notion or Slack."
+        "answer1": "Once onboarded, you’ll receive access to your **Notion or Slack workspace** where you can create tasks, upload briefs, and set priorities.",
+        "answer2": "Your PM manages the workflow, assigns the right designer or editor, and ensures everything stays transparent and on track."
       }
     },
     "cta": {

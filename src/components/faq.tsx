@@ -4,6 +4,7 @@ import { ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 import ContactForm from "./forms/contact-form";
+import TextWithMarkdown from "./ui/TextWithMarkdown";
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -11,24 +12,30 @@ export default function FAQSection() {
   const t = useTranslations("faq");
 
   const faqs = useMemo(() => {
-    const questions = [];
+    const list = [];
     let index = 0;
 
-    while (index < 10) {
+    while (true) {
       const questionKey = `questions.${index}.question`;
-      const answerKey = `questions.${index}.answer`;
       const question = t(questionKey);
-      const answer = t(answerKey);
-
-      if (question === questionKey || question.startsWith("faq.questions.")) {
+      if (question === questionKey || question.startsWith("faq.questions."))
         break;
+
+      const answers: string[] = [];
+      let answerIndex = 1;
+      while (true) {
+        const answerKey = `questions.${index}.answer${answerIndex}`;
+        const answer = t(answerKey);
+        if (answer === answerKey || answer.startsWith("faq.questions.")) break;
+        answers.push(answer);
+        answerIndex++;
       }
 
-      questions.push({ question, answer });
+      list.push({ question, answers });
       index++;
     }
 
-    return questions;
+    return list;
   }, [t]);
 
   const toggleFAQ = (index: number) => {
@@ -77,10 +84,15 @@ export default function FAQSection() {
                           : "max-h-0 opacity-0"
                       } overflow-hidden`}
                     >
-                      <div className="px-6 pb-6 pt-2">
-                        <p className="text-slate-600 leading-relaxed">
-                          {faq.answer}
-                        </p>
+                      <div className="px-6 pb-6 pt-2 space-y-2">
+                        {faq.answers.map((ans, i) => (
+                          <TextWithMarkdown
+                            key={i}
+                            className="text-slate-600 leading-relaxed"
+                          >
+                            {ans}
+                          </TextWithMarkdown>
+                        ))}
                       </div>
                     </div>
                   </div>

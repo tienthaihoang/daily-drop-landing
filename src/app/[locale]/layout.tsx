@@ -3,7 +3,7 @@ import IntlProviderClient from "@/provider/IntlProviderClient";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { Suspense, type ReactNode } from "react";
+import { type ReactNode } from "react";
 import "../globals.css";
 
 type Props = {
@@ -33,7 +33,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className="antialiased font-sans" suppressHydrationWarning>
         <IntlProviderClient locale={locale} messages={messages}>
-          <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+          {children}
         </IntlProviderClient>
       </body>
     </html>

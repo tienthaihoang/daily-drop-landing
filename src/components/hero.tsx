@@ -21,33 +21,27 @@ export default function HeroSection() {
       id: "#video",
     },
     {
-      nameKey: "development",
+      nameKey: "content",
       bgColor: "bg-teal-50",
       textColor: "text-teal-700",
-      id: "#development",
-    },
-    {
-      nameKey: "content",
-      bgColor: "bg-cyan-50",
-      textColor: "text-cyan-700",
       id: "#content",
     },
     {
       nameKey: "presentation",
-      bgColor: "bg-lime-50",
-      textColor: "text-lime-700",
+      bgColor: "bg-cyan-50",
+      textColor: "text-cyan-700",
       id: "#presentation",
     },
     {
       nameKey: "qa",
-      bgColor: "bg-emerald-50",
-      textColor: "text-emerald-700",
+      bgColor: "bg-lime-50",
+      textColor: "text-lime-700",
       id: "#qa",
     },
     {
       nameKey: "localization",
-      bgColor: "bg-teal-50",
-      textColor: "text-teal-700",
+      bgColor: "bg-emerald-50",
+      textColor: "text-emerald-700",
       id: "#content",
     },
   ];
@@ -103,7 +97,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                 <div>
                   <div className="flex items-baseline gap-2 mb-2">
-                    <span className="text-4xl md:text-6xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                    <span className="text-4xl md:text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                       {t("pricing.amount")}
                     </span>
                     <span className="text-xl md:text-2xl text-slate-600">

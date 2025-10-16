@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import TextWithMarkdown from "./ui/TextWithMarkdown";
 
 export default function PricingPlans() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "yearly">(
@@ -16,23 +17,32 @@ export default function PricingPlans() {
   const locale = useLocale();
 
   const plans = useMemo(() => {
-    const getFeatures = (planKey: string): string[] => {
-      const features = [];
+    const getServices = (planKey: string): string[] => {
+      const services = [];
       let index = 0;
-
-      while (index < 7) {
-        const key = `plans.${planKey}.features.${index}`;
+      while (index < 10) {
+        const key = `plans.${planKey}.services.${index}`;
         const translation = t(key);
-
-        if (translation === key || translation.startsWith("pricing.plans.")) {
+        if (translation === key || translation.startsWith("pricing.plans."))
           break;
-        }
-
-        features.push(translation);
+        services.push(translation);
         index++;
       }
+      return services;
+    };
 
-      return features;
+    const getManagement = (planKey: string): string[] => {
+      const management = [];
+      let index = 0;
+      while (index < 10) {
+        const key = `plans.${planKey}.management.${index}`;
+        const translation = t(key);
+        if (translation === key || translation.startsWith("pricing.plans."))
+          break;
+        management.push(translation);
+        index++;
+      }
+      return management;
     };
 
     return [
@@ -40,39 +50,43 @@ export default function PricingPlans() {
         planKey: "starter",
         name: t("plans.starter.name"),
         description: t("plans.starter.description"),
-        turnaround: t("plans.starter.turnaround"),
-        features: getFeatures("starter"),
+        services: getServices("starter"),
+        management: getManagement("starter"),
         price: {
-          monthly: { USD: 2000, KRW: 2854000 },
-          yearly: { USD: 21600, KRW: 30847200 },
+          monthly: { USD: 1500, KRW: 2040000 },
+          yearly: { USD: 16200, KRW: 22032000 },
         },
-        gradient: "from-purple-500 to-pink-500",
+        gradient: "from-blue-500 to-cyan-500",
+        cta: t("plans.starter.cta"),
         popular: false,
       },
       {
         planKey: "professional",
         name: t("plans.professional.name"),
         description: t("plans.professional.description"),
-        turnaround: t("plans.professional.turnaround"),
-        features: getFeatures("professional"),
+        services: getServices("professional"),
+        management: getManagement("professional"),
         price: {
-          monthly: { USD: 2500, KRW: 3567500 },
-          yearly: { USD: 27000, KRW: 38529000 },
+          monthly: { USD: 2500, KRW: 3400000 },
+          yearly: { USD: 27000, KRW: 36720000 },
         },
-        gradient: "from-pink-500 to-orange-500",
+        gradient: "from-purple-500 to-pink-500",
+        badge: t("plans.professional.best"),
+        cta: t("plans.professional.cta"),
         popular: true,
       },
       {
         planKey: "enterprise",
         name: t("plans.enterprise.name"),
         description: t("plans.enterprise.description"),
-        turnaround: t("plans.enterprise.turnaround"),
-        features: getFeatures("enterprise"),
+        services: getServices("enterprise"),
+        management: getManagement("enterprise"),
         price: {
-          monthly: { USD: 3500, KRW: 4994500 },
-          yearly: { USD: 37800, KRW: 53910600 },
+          monthly: { USD: 3500, KRW: 4760000 },
+          yearly: { USD: 37800, KRW: 51408000 },
         },
         gradient: "from-orange-500 to-red-500",
+        cta: t("plans.enterprise.cta"),
         popular: false,
       },
     ];
@@ -152,23 +166,31 @@ export default function PricingPlans() {
                 <div key={idx} className="relative">
                   {plan.popular && (
                     <div className="absolute -top-3 right-4 z-10">
-                      <span className="bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                        {t("plans.professional.popular")}
+                      <span className="bg-gradient-to-r from-pink-500 to-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                        {plan.badge}
                       </span>
                     </div>
                   )}
 
-                  <div className="h-full bg-slate-50 rounded-2xl p-5 hover:shadow-lg transition-all duration-300 border-2 border-slate-200">
-                    <h3 className="text-2xl font-black text-slate-900 mb-2">
-                      {plan.name}
-                    </h3>
-                    <p className="text-slate-600 text-sm mb-6 min-h-[60px]">
-                      {plan.description}
-                    </p>
+                  <div
+                    className={`h-full bg-white rounded-3xl p-6 transition-all duration-300 border-2 ${
+                      plan.popular
+                        ? "border-pink-500 shadow-2xl"
+                        : "border-slate-200 shadow-lg hover:shadow-xl"
+                    }`}
+                  >
+                    <div className="mb-6">
+                      <h3 className="text-2xl font-black text-slate-900 mb-2">
+                        {plan.name}
+                      </h3>
+                      <TextWithMarkdown className="text-slate-600 text-sm min-h-[40px]">
+                        {plan.description}
+                      </TextWithMarkdown>
+                    </div>
 
-                    <div className="mb-4">
+                    <div className="mb-6 pb-6 border-b border-slate-200">
                       <div className="flex items-baseline gap-2">
-                        <span className="text-4xl font-black text-slate-900">
+                        <span className="text-5xl font-black bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
                           {formatPrice(
                             billingCycle === "monthly"
                               ? plan.price.monthly[currency]
@@ -176,11 +198,11 @@ export default function PricingPlans() {
                           )}
                         </span>
                       </div>
-                      <p className="text-slate-600 text-sm mt-1">
+                      <p className="text-slate-600 text-sm mt-2">
                         {t("common.perMonth")}{" "}
-                        <span className="font-semibold">
+                        {/* <span className="font-semibold">
                           {t("common.freeTrial")}
-                        </span>
+                        </span> */}
                       </p>
                       {billingCycle === "yearly" && (
                         <p className="text-sm text-slate-500 mt-1">
@@ -191,57 +213,44 @@ export default function PricingPlans() {
                       )}
                     </div>
 
-                    <div className="flex flex-col gap-2 text-sm mb-6">
-                      <span className="flex items-center gap-2">
-                        <svg
-                          className="w-4 h-4 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        {plan.turnaround}
-                      </span>
-                      <span className="flex items-center gap-2">
-                        <svg
-                          className="w-4 h-4 flex-shrink-0"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-                          />
-                        </svg>
-                        {t("common.unlimitedRevisions")}
-                      </span>
-                    </div>
-
-                    <button className="w-full group bg-[#0B2545] hover:bg-[#0a1f3a] text-white font-bold py-3 px-6 rounded-xl shadow-lg shadow-purple-300/50 hover:shadow-xl hover:shadow-pink-300/50 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-8">
-                      {t("common.cta")}
+                    <button
+                      className={`w-full group font-bold py-3 px-6 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 mb-6 ${
+                        plan.popular
+                          ? "bg-gradient-to-r from-pink-500 to-orange-500 text-white hover:shadow-2xl"
+                          : "bg-slate-900 text-white hover:bg-slate-800"
+                      }`}
+                    >
+                      {plan.cta}
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </button>
 
-                    <div className="border-t border-slate-300 pt-6">
-                      <h4 className="font-bold text-slate-900 mb-4">
-                        {t("common.whatsIncluded")}
+                    <div className="mb-6">
+                      <h4 className="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wide">
+                        {t("common.services")}
                       </h4>
-                      <ul className="space-y-3">
-                        {plan.features.map((feature, fIdx) => (
-                          <li key={fIdx} className="flex items-start gap-2">
-                            <Check className="w-5 h-5 flex-shrink-0 mt-0.5" />
-                            <span className="text-slate-700 text-sm">
-                              {feature}
-                            </span>
+                      <ul className="space-y-2">
+                        {plan.services.map((service, sIdx) => (
+                          <li key={sIdx} className="flex items-start gap-2">
+                            <Check className="w-4 h-4 flex-shrink-0 mt-0.5 text-green-600" />
+                            <TextWithMarkdown className="text-slate-700 text-sm">
+                              {service}
+                            </TextWithMarkdown>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="pt-4 border-t border-slate-200">
+                      <h4 className="font-bold text-slate-900 mb-3 text-sm uppercase tracking-wide">
+                        {t("common.management")}
+                      </h4>
+                      <ul className="space-y-2">
+                        {plan.management.map((item, mIdx) => (
+                          <li key={mIdx} className="flex items-start gap-2">
+                            <Check className="w-4 h-4 flex-shrink-0 mt-0.5 text-blue-600" />
+                            <TextWithMarkdown className="text-slate-700 text-sm">
+                              {item}
+                            </TextWithMarkdown>
                           </li>
                         ))}
                       </ul>
@@ -250,6 +259,7 @@ export default function PricingPlans() {
                 </div>
               ))}
             </div>
+
             <div className="text-center text-sm text-slate-600 space-y-4 mt-8">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
                 <div className="flex items-center gap-2">
@@ -267,7 +277,8 @@ export default function PricingPlans() {
                   <span className="text-slate-600">{t("footer.secure")}</span>
                 </div>
                 <span className="inline-flex items-center gap-1 text-blue-600 border border-blue-200 bg-blue-50 px-2 py-0.5 rounded text-xs font-medium">
-                  Powered by <span className="font-bold">stripe</span>
+                  Powered by
+                  <span className="font-bold">stripe</span>
                 </span>
               </div>
 
@@ -290,22 +301,6 @@ export default function PricingPlans() {
 
               <div className="text-xs leading-relaxed max-w-4xl mx-auto text-slate-500 space-y-2">
                 <p>{t("footer.disclaimer")}</p>
-                {/* <p>
-                  <span className="font-semibold text-slate-700">
-                    {t("footer.planTitles.design")}
-                  </span>{" "}
-                  {t("footer.planDetails.design")} •
-                  <span className="font-semibold text-slate-700">
-                    {" "}
-                    {t("footer.planTitles.designVideo")}
-                  </span>{" "}
-                  {t("footer.planDetails.designVideo")} •
-                  <span className="font-semibold text-slate-700">
-                    {" "}
-                    {t("footer.planTitles.complete")}
-                  </span>{" "}
-                  {t("footer.planDetails.complete")}
-                </p> */}
                 <p>
                   <span className="font-semibold text-slate-700">
                     {t("footer.terms")}

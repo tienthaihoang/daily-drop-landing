@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, Star } from "lucide-react";
+import { CheckCircle, Globe2Icon, Star } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function ClientReviews() {
@@ -144,6 +144,10 @@ export default function ClientReviews() {
               {t("title")}
             </h2>
             <p className="text-xl text-slate-600">{t("subtitle")}</p>
+            <p className="inline-flex items-center justify-center gap-2 text-sm font-medium text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full mx-auto mt-4 shadow-sm border border-emerald-100">
+              <Globe2Icon className="w-4 h-4 text-blue-500" />
+              {t("badge")}
+            </p>
           </div>
         </div>
 

@@ -19,12 +19,12 @@ export default function OurServices() {
       gradient: "from-emerald-500 to-teal-500",
       bgGradient: "from-emerald-50 to-teal-50",
     },
-    {
-      titleKey: "development",
-      image: "/web-development.png",
-      gradient: "from-teal-500 to-cyan-500",
-      bgGradient: "from-teal-50 to-cyan-50",
-    },
+    // {
+    //   titleKey: "development",
+    //   image: "/web-development.png",
+    //   gradient: "from-teal-500 to-cyan-500",
+    //   bgGradient: "from-teal-50 to-cyan-50",
+    // },
     {
       titleKey: "presentation",
       image: "/presentation.png",

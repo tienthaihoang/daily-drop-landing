@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import TextWithMarkdown from "./ui/TextWithMarkdown";
 
 export default function HowItWorks() {
   const t = useTranslations("howItWorks");
@@ -44,7 +45,7 @@ export default function HowItWorks() {
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
               {t("title")}
             </h2>
-            <p className="text-xl text-slate-600">{t("subtitle")}</p>
+            <TextWithMarkdown className="text-xl text-slate-600">{t("subtitle")}</TextWithMarkdown>
           </div>
         </div>
 
@@ -52,10 +53,10 @@ export default function HowItWorks() {
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
               {process.map((item, idx) => (
-                <div key={idx} className="group relative">
-                  <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 h-full">
+                <div key={idx} className="group relative h-full">
+                  <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 flex flex-col h-full">
                     <div
-                      className={`relative h-48 bg-gradient-to-br ${item.bgGradient} flex items-center justify-center overflow-hidden`}
+                      className={`relative h-48 flex-shrink-0 bg-gradient-to-br ${item.bgGradient} flex items-center justify-center overflow-hidden`}
                     >
                       <div
                         className={`absolute inset-0 bg-gradient-to-br ${item.gradient} opacity-20 group-hover:opacity-40 transition-opacity duration-500`}
@@ -72,13 +73,13 @@ export default function HowItWorks() {
                       </div>
                     </div>
 
-                    <div className="p-6">
-                      <h3 className="text-xl font-black text-slate-900 mb-3">
+                    <div className="p-6 flex flex-col flex-1">
+                      <h3 className="text-xl font-black text-slate-900 mb-3 md:min-h-[96px] flex items-center justify-center">
                         {t(`steps.${item.titleKey}.title`)}
                       </h3>
-                      <p className="text-slate-600 text-sm leading-relaxed">
+                      <TextWithMarkdown className="text-slate-600 text-sm leading-relaxed flex-1">
                         {t(`steps.${item.titleKey}.description`)}
-                      </p>
+                      </TextWithMarkdown>
                     </div>
                   </div>
                 </div>

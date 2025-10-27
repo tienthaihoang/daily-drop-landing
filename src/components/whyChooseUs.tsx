@@ -1,104 +1,73 @@
 "use client";
 
-import {
-  Award,
-  Clock,
-  DollarSign,
-  RefreshCw,
-  Target,
-  Users,
-} from "lucide-react";
+import { CheckCircle2, XCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function WhyChooseUs() {
   const t = useTranslations("whyChooseUs");
 
-  const benefits = [
-    {
-      icon: <RefreshCw className="w-10 h-10" />,
-      titleKey: "unlimited",
-      gradient: "from-[#9FE870] via-emerald-500 to-teal-500",
-      bgGradient: "from-lime-50 to-emerald-100",
-    },
-    {
-      icon: <Target className="w-10 h-10" />,
-      titleKey: "delivery",
-      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-      bgGradient: "from-emerald-50 to-teal-100",
-    },
-    {
-      icon: <Award className="w-10 h-10" />,
-      titleKey: "quality",
-      gradient: "from-teal-500 via-cyan-500 to-blue-500",
-      bgGradient: "from-teal-50 to-cyan-100",
-    },
-    {
-      icon: <Clock className="w-10 h-10" />,
-      titleKey: "pause",
-      gradient: "from-[#9FE870] via-lime-400 to-emerald-400",
-      bgGradient: "from-lime-50 to-emerald-50",
-    },
-    {
-      icon: <DollarSign className="w-10 h-10" />,
-      titleKey: "fixed",
-      gradient: "from-emerald-400 via-teal-400 to-cyan-400",
-      bgGradient: "from-emerald-50 to-teal-50",
-    },
-    {
-      icon: <Users className="w-10 h-10" />,
-      titleKey: "dedicated",
-      gradient: "from-cyan-400 via-blue-500 to-indigo-500",
-      bgGradient: "from-cyan-50 to-blue-100",
-    },
+  const criteria = [
+    "industryKnowledge",
+    "brandConsistency",
+    "reviewExperience",
+    "speed",
+    "revisionCount",
   ];
 
   return (
-    <section className="py-20 px-4 bg-white">
-      <div className="container mx-auto">
+    <section className="py-20 px-4 bg-slate-950 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"></div>
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-indigo-600/5 rounded-full blur-3xl"></div>
+
+      <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-12 mb-16">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
               {t("title")}
             </h2>
-            <p className="text-xl text-slate-600">{t("subtitle")}</p>
+            <p className="text-xl text-slate-300">{t("subtitle")}</p>
           </div>
         </div>
 
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {benefits.map((benefit, idx) => (
+            {/* Header */}
+            <div className="grid grid-cols-2 text-center font-bold border-b border-white/10 pb-4 mb-6">
+              <div className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent text-lg">
+                {t("columns.ours")}
+              </div>
+              <div className="text-slate-500 text-lg">
+                {t("columns.others")}
+              </div>
+            </div>
+
+            <div className="flex flex-col divide-y divide-white/5 rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md">
+              {criteria.map((key, idx) => (
                 <div
-                  key={idx}
-                  className="group relative rounded-3xl overflow-hidden hover:scale-105 transition-all duration-500"
+                  key={key}
+                  className={`grid grid-cols-2 items-start text-left ${
+                    idx % 2 === 0 ? "bg-white/5" : "bg-transparent"
+                  } hover:bg-white/10 transition-colors`}
                 >
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${benefit.gradient}`}
-                  ></div>
-                  <div className="absolute inset-0 bg-white/10 backdrop-blur-sm"></div>
-
-                  <div className="relative p-8 h-full flex flex-col items-center text-center min-h-[360px]">
-                    <div className="mb-6 flex-shrink-0">
-                      <div className="inline-flex p-5 rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 shadow-2xl group-hover:scale-110 transition-transform duration-500">
-                        <div className="text-white">{benefit.icon}</div>
-                      </div>
-                    </div>
-
-                    <div className="flex-1 flex flex-col justify-start">
-                      <h3 className="text-2xl font-black text-white mb-4 drop-shadow-lg min-h-[64px] flex items-center justify-center">
-                        {t(`benefits.${benefit.titleKey}.title`)}
-                      </h3>
-                      <p className="text-white/90 leading-relaxed drop-shadow text-sm">
-                        {t(`benefits.${benefit.titleKey}.description`)}
-                      </p>
-                    </div>
-
-                    <div className="absolute top-4 right-4 w-24 h-24 bg-white/10 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
-                    <div className="absolute bottom-4 left-4 w-20 h-20 bg-white/10 rounded-full blur-xl group-hover:scale-150 transition-transform duration-700"></div>
+                  <div className="p-6 flex items-start gap-3 border-r border-white/10">
+                    <CheckCircle2
+                      className="hidden md:block text-purple-400 flex-shrink-0 mt-[2px]"
+                      size={20}
+                    />
+                    <p className="leading-relaxed text-slate-300">
+                      {t(`criteria.${key}.ours`)}
+                    </p>
                   </div>
 
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
+                  <div className="p-6 flex items-start gap-3">
+                    <XCircle
+                      className="hidden md:block text-slate-600 flex-shrink-0 mt-[2px]"
+                      size={20}
+                    />
+                    <p className="leading-relaxed text-slate-500">
+                      {t(`criteria.${key}.others`)}
+                    </p>
                   </div>
                 </div>
               ))}

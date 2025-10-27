@@ -25,16 +25,16 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-[999]">
+      <nav className="fixed top-0 left-0 w-full z-[99]">
         <div className="container mx-auto px-4 py-3 md:py-4">
-          <div className="backdrop-blur-md bg-cyan-50/70 shadow-sm border-b border-gray-200 rounded-2xl px-4 md:px-6">
+          <div className="backdrop-blur-md bg-slate-900/80 shadow-lg border border-white/10 rounded-2xl px-4 md:px-6">
             <div className="grid grid-cols-12 items-center py-3">
               <div className="col-span-12 lg:col-span-8 lg:col-start-3 flex items-center justify-between">
                 <Link
                   href="/"
                   className="flex items-center transition-transform hover:scale-105"
                 >
-                  <div className="text-2xl font-black bg-gradient-to-r from-green-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
+                  <div className="text-2xl font-black bg-gradient-to-r from-purple-400 via-indigo-400 to-blue-400 bg-clip-text text-transparent">
                     Daily Drop
                   </div>
                 </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
                   <button
                     onClick={() => setOpen(!open)}
                     aria-label="Toggle menu"
-                    className="text-gray-700 focus:outline-none hover:scale-110 transition-transform p-1"
+                    className="text-white focus:outline-none hover:scale-110 transition-transform p-1"
                   >
                     {open ? (
                       <svg
@@ -95,7 +95,7 @@ export default function Navbar() {
                     <Link
                       key={idx}
                       href={item.path}
-                      className="font-semibold text-gray-800 hover:text-cyan-600 transition-all hover:scale-110"
+                      className="font-semibold text-slate-300 hover:text-white transition-all hover:scale-110"
                     >
                       {t(item.title)}
                     </Link>
@@ -115,7 +115,7 @@ export default function Navbar() {
 
                   <button
                     onClick={() => setContactModalOpen(true)}
-                    className="bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                    className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold px-6 py-2.5 rounded-xl shadow-lg shadow-purple-900/50 hover:shadow-xl hover:shadow-purple-800/50 transition-all duration-300 hover:scale-105"
                   >
                     {t("contact")}
                   </button>
@@ -127,13 +127,13 @@ export default function Navbar() {
                   open ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="col-span-12 lg:hidden flex flex-col space-y-4 mt-4 pb-4 border-t border-gray-200 pt-4">
+                <div className="col-span-12 lg:hidden flex flex-col space-y-4 mt-4 pb-4 border-t border-white/10 pt-4">
                   {site.routes.map((item, idx) => (
                     <Link
                       key={idx}
                       href={item.path}
                       onClick={() => setOpen(false)}
-                      className={`font-semibold text-gray-800 hover:text-cyan-600 transition-all hover:scale-105 transform ${
+                      className={`font-semibold text-slate-300 hover:text-white transition-all hover:scale-105 transform ${
                         open
                           ? "translate-y-0 opacity-100"
                           : "-translate-y-4 opacity-0"
@@ -151,7 +151,7 @@ export default function Navbar() {
                       setContactModalOpen(true);
                       setOpen(false);
                     }}
-                    className={`group relative bg-gradient-to-r from-green-400 to-cyan-500 hover:from-green-500 hover:to-cyan-600 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-purple-300/50 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2 transform ${
+                    className={`bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold px-6 py-3 rounded-xl shadow-lg shadow-purple-900/50 transition-all duration-300 hover:scale-105 inline-flex items-center justify-center gap-2 transform ${
                       open
                         ? "translate-y-0 opacity-100"
                         : "-translate-y-4 opacity-0"

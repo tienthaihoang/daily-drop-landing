@@ -1,6 +1,6 @@
 "use client";
 
-import { CheckCircle, Globe2Icon, Star } from "lucide-react";
+import { CheckCircle, Globe2Icon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
 export default function ClientReviews() {
@@ -121,31 +121,40 @@ export default function ClientReviews() {
   const renderStars = (rating: number) => {
     return (
       <div className="flex gap-1">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
+        {[...Array(5)].map((_, i) => (
+          <svg
+            key={i}
             className={`w-5 h-5 ${
-              star <= rating
-                ? "fill-yellow-400 text-yellow-400"
-                : "fill-gray-200 text-gray-200"
+              i < rating ? "text-purple-400" : "text-slate-700"
             }`}
-          />
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>
         ))}
       </div>
     );
   };
 
   return (
-    <section id="reviews" className="py-20 px-4 bg-cyan-50 scroll-mt-16">
-      <div className="container mx-auto">
+    <section
+      id="reviews"
+      className="py-20 px-4 bg-slate-900 relative overflow-hidden scroll-mt-16"
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"></div>
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/5 rounded-full blur-3xl"></div>
+
+      <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-12 mb-16">
           <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
               {t("title")}
             </h2>
-            <p className="text-xl text-slate-600">{t("subtitle")}</p>
-            <p className="inline-flex items-center justify-center gap-2 text-sm font-medium text-emerald-700 bg-emerald-50 px-3 py-1.5 rounded-full mx-auto mt-4 shadow-sm border border-emerald-100">
-              <Globe2Icon className="w-4 h-4 text-blue-500" />
+            <p className="text-xl text-slate-300">{t("subtitle")}</p>
+            <p className="inline-flex items-center justify-center gap-2 text-sm font-medium text-purple-300 bg-purple-500/10 border border-purple-500/30 px-3 py-1.5 rounded-full mx-auto mt-4 backdrop-blur-sm">
+              <Globe2Icon className="w-4 h-4 text-indigo-400" />
               {t("badge")}
             </p>
           </div>
@@ -157,7 +166,7 @@ export default function ClientReviews() {
               {reviews.map((review, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]"
+                  className="bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-[1.02]"
                 >
                   <div className="flex items-start gap-4 mb-4">
                     <div
@@ -168,16 +177,16 @@ export default function ClientReviews() {
 
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <h3 className="font-bold text-slate-900 truncate">
+                        <h3 className="font-bold text-white truncate">
                           {review.name}
                         </h3>
                         <span className="text-lg">{review.flag}</span>
-                        <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-purple-400 flex-shrink-0" />
                       </div>
-                      <p className="text-xs text-slate-500 font-semibold mb-0.5">
+                      <p className="text-xs text-slate-400 font-semibold mb-0.5">
                         {t(`services.${review.serviceKey}`)}
                       </p>
-                      <p className="text-xs text-slate-400">
+                      <p className="text-xs text-slate-500">
                         {t(`positions.${review.positionKey}`)}
                       </p>
                     </div>
@@ -185,11 +194,11 @@ export default function ClientReviews() {
 
                   <div className="mb-4">{renderStars(review.rating)}</div>
 
-                  <p className="text-slate-700 text-sm leading-relaxed mb-4 min-h-[60px]">
+                  <p className="text-slate-300 text-sm leading-relaxed mb-4 min-h-[60px]">
                     {review.comment}
                   </p>
 
-                  <p className="text-xs text-slate-400">
+                  <p className="text-xs text-slate-500">
                     {new Intl.DateTimeFormat(locale, {
                       year: "numeric",
                       month: "long",

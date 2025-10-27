@@ -21,29 +21,32 @@ export default function TermsContent() {
     { key: "indemnification", hasSubsections: false },
     { key: "changes", hasSubsections: false },
     { key: "governing", hasSubsections: false },
-    { key: "contact", hasSubsections: false },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-blue-50">
+    <div className="min-h-screen bg-slate-950">
       <div className="fixed top-10 left-4 z-50">
         <Link
           href={`/${locale}`}
-          className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold px-4 py-2 rounded-xl shadow-lg border-2 border-slate-200 transition-all duration-300 hover:scale-105"
+          className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white font-semibold px-4 py-2 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
         >
           <ArrowLeft className="w-5 h-5" />
           <span className="hidden sm:inline">{t("backButton")}</span>
         </Link>
       </div>
 
-      <div className="bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 py-20 px-4">
-        <div className="container mx-auto">
+      <div className="bg-slate-950 relative overflow-hidden py-20 px-4">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-indigo-600/5 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3">
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-cyan-200 shadow-sm">
+                <div className="inline-flex items-center gap-2 bg-white/5 backdrop-blur-md border border-white/10 px-4 py-2 rounded-full mb-6">
                   <svg
-                    className="w-5 h-5 text-cyan-600"
+                    className="w-5 h-5 text-purple-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -55,16 +58,16 @@ export default function TermsContent() {
                       d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                     />
                   </svg>
-                  <span className="text-sm font-semibold text-cyan-900">
+                  <span className="text-sm font-semibold text-slate-300">
                     {t("badge")}
                   </span>
                 </div>
 
-                <h1 className="text-5xl md:text-6xl font-black text-slate-900 mb-6">
+                <h1 className="text-5xl md:text-6xl font-black text-white mb-6">
                   {t("title")}
                 </h1>
 
-                <p className="text-xl text-slate-600 mb-4">{t("subtitle")}</p>
+                <p className="text-xl text-slate-300 mb-4">{t("subtitle")}</p>
 
                 <p className="text-sm text-slate-500">{t("lastUpdated")}</p>
               </div>
@@ -73,13 +76,15 @@ export default function TermsContent() {
         </div>
       </div>
 
-      <div className="py-16 px-4">
-        <div className="container mx-auto">
+      <div className="py-16 px-4 bg-slate-900 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"></div>
+
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-12 gap-8">
             <div className="hidden lg:block lg:col-span-3 lg:col-start-2">
               <div className="sticky top-24">
-                <div className="bg-white rounded-2xl p-6 border-2 border-cyan-200 shadow-sm">
-                  <h3 className="text-sm font-bold text-slate-900 mb-4 uppercase tracking-wide">
+                <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6">
+                  <h3 className="text-sm font-bold text-white mb-4 uppercase tracking-wide">
                     {t("tableOfContents")}
                   </h3>
                   <nav className="space-y-2">
@@ -87,7 +92,7 @@ export default function TermsContent() {
                       <a
                         key={idx}
                         href={`#${section.key}`}
-                        className="block text-sm text-slate-600 hover:text-cyan-600 transition-colors py-1"
+                        className="block text-sm text-slate-400 hover:text-purple-400 transition-colors py-1"
                       >
                         {t(`sections.${section.key}.title`)}
                       </a>
@@ -105,15 +110,15 @@ export default function TermsContent() {
                     id={section.key}
                     className="mb-12 scroll-mt-24"
                   >
-                    <div className="bg-white rounded-2xl p-8 border-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                      <h2 className="text-3xl font-black text-slate-900 mb-6 flex items-center gap-3">
-                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-teal-500 text-white text-lg font-bold">
+                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-white/20 transition-all">
+                      <h2 className="text-3xl font-black text-white mb-6 flex items-center gap-3">
+                        <span className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-purple-600 to-indigo-600 text-white text-lg font-bold">
                           {idx + 1}
                         </span>
                         {t(`sections.${section.key}.title`)}
                       </h2>
 
-                      <div className="text-slate-700 leading-relaxed space-y-4">
+                      <div className="text-slate-300 leading-relaxed space-y-4">
                         <p>{t(`sections.${section.key}.content`)}</p>
 
                         {section.hasSubsections && (
@@ -125,7 +130,7 @@ export default function TermsContent() {
                                   className="flex items-start gap-3"
                                 >
                                   <svg
-                                    className="w-5 h-5 text-cyan-600 flex-shrink-0 mt-0.5"
+                                    className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                   >
@@ -136,12 +141,12 @@ export default function TermsContent() {
                                     />
                                   </svg>
                                   <div>
-                                    <strong className="text-slate-900">
+                                    <strong className="text-white">
                                       {t(
                                         `sections.${section.key}.items.${subIdx}.title`
                                       )}
                                     </strong>
-                                    <p className="text-slate-600 mt-1">
+                                    <p className="text-slate-400 mt-1">
                                       {t(
                                         `sections.${section.key}.items.${subIdx}.description`
                                       )}
@@ -157,34 +162,6 @@ export default function TermsContent() {
                   </section>
                 ))}
               </div>
-
-              {/* <div className="mt-12 bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-2xl p-8 border-2 border-blue-200">
-                <div className="text-center">
-                  <h3 className="text-2xl font-black text-slate-900 mb-3">
-                    {t("cta.title")}
-                  </h3>
-                  <p className="text-slate-600 mb-6">{t("cta.subtitle")}</p>
-                  <a
-                    href="mailto:legal@dailydrop.com"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-600 via-teal-600 to-blue-600 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                  >
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    {t("cta.button")}
-                  </a>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

@@ -44,14 +44,21 @@ export default function FAQSection() {
 
   return (
     <>
-      <section id="faq" className="py-20 px-4 bg-cyan-50 scroll-mt-16">
-        <div className="container mx-auto">
+      <section
+        id="faq"
+        className="py-20 px-4 bg-slate-900 relative overflow-hidden scroll-mt-16"
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-indigo-600/5 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto relative z-10">
           <div className="grid grid-cols-12 mb-12">
             <div className="col-span-12 lg:col-span-8 lg:col-start-3 text-center">
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
                 {t("title")}
               </h2>
-              <p className="text-xl text-slate-600">{t("subtitle")}</p>
+              <p className="text-xl text-slate-300">{t("subtitle")}</p>
             </div>
           </div>
 
@@ -61,13 +68,13 @@ export default function FAQSection() {
                 {faqs.map((faq, index) => (
                   <div
                     key={index}
-                    className="bg-white border-2 border-slate-200 rounded-xl overflow-hidden hover:border-slate-300 transition-colors"
+                    className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden hover:bg-white/10 hover:border-white/20 transition-all"
                   >
                     <button
                       onClick={() => toggleFAQ(index)}
-                      className="w-full flex items-center justify-between p-6 text-left hover:bg-slate-50 transition-colors"
+                      className="w-full flex items-center justify-between p-6 text-left"
                     >
-                      <span className="font-bold text-slate-900 text-lg pr-8">
+                      <span className="font-bold text-white text-lg pr-8">
                         {faq.question}
                       </span>
                       <ChevronDown
@@ -88,7 +95,7 @@ export default function FAQSection() {
                         {faq.answers.map((ans, i) => (
                           <TextWithMarkdown
                             key={i}
-                            className="text-slate-600 leading-relaxed"
+                            className="text-slate-400 leading-relaxed"
                           >
                             {ans}
                           </TextWithMarkdown>
@@ -99,14 +106,14 @@ export default function FAQSection() {
                 ))}
               </div>
 
-              <div className="mt-12 text-center bg-gradient-to-br from-cyan-50 via-teal-50 to-blue-50 rounded-3xl p-8 border-2 border-slate-200">
-                <h3 className="text-2xl font-black text-slate-900 mb-3">
+              <div className="mt-12 text-center bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8">
+                <h3 className="text-2xl font-black text-white mb-3">
                   {t("cta.title")}
                 </h3>
-                <p className="text-slate-600 mb-6">{t("cta.subtitle")}</p>
+                <p className="text-slate-400 mb-6">{t("cta.subtitle")}</p>
                 <button
                   onClick={() => setContactModalOpen(true)}
-                  className="bg-gradient-to-r from-green-400 to-cyan-500 text-slate-900 text-white font-bold px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-bold px-8 py-3 rounded-xl shadow-xl shadow-purple-900/50 hover:shadow-2xl hover:shadow-purple-800/50 transition-all duration-300 hover:scale-105"
                 >
                   {t("cta.button")}
                 </button>

@@ -7,9 +7,9 @@
   },
   "hero": {
     "badge": "Trusted by 750+ teams in Singapore, Japan & Vietnam",
-    "title1": "Build Your Creative Team",
-    "title2": "Without Hiring",
-    "subtitle": "Design, video, content, and localization — all managed under one creative system. Fixed monthly plans. Unlimited requests.",
+    "title1": "Content that clears compliance",
+    "title2": "Not just looks good",
+    "subtitle": "We help finance, healthcare and real estate teams create content that's fast, brand-safe and compliance-ready.",
     "services": {
       "design": "Design",
       "video": "Video",
@@ -21,9 +21,9 @@
     "pricing": {
       "amount": "From $1500",
       "period": "/month",
-      "cancel": "Cancel anytime · 7-day free trial",
+      "cancel": "Cancel anytime · 5-day free trial",
       "cancelSubtitle": "(Unlimited revisions per slot · PM & QA included)",
-      "cta": "Start Your 1-Week Pilot"
+      "cta": "Try 5 Days Free"
     },
     "features": {
       "delivery": "⚡ PM-coordinated workflow (48h–3d turnaround)",
@@ -31,6 +31,13 @@
       "team": "🎯 Dedicated PM + Verified creative team",
       "quality": "✨ Premium quality"
     }
+  },
+  "stats": {
+    "satisfaction": "Real satisfaction rate",
+    "deliveryValue": "3 days",
+    "averageDelivery": "Average delivery time",
+    "trustedClients": "Trusted clients",
+    "financeTrust": "Trusted by companies in finance, including major banks and fintech startups."
   },
   "gallery": {
     "titles": {
@@ -42,86 +49,120 @@
       "localization": "Localization"
     }
   },
-  "howItWorks": {
-    "title": "How Your Creative Subscription Works",
-    "subtitle": "Get started in minutes with our simple **managed 4-step workflow**",
-    "steps": {
-      "step1": {
-        "title": "Choose your service",
-        "description": "Select Design, Video, Presentation, Content Writing, or Localization projects that fit your brand goals."
+  "ourServices": {
+    "title": "What We Create",
+    "subtitle": "We craft data-driven visuals and media designed to communicate your message with clarity and credibility.",
+    "services": {
+      "regulationVisuals": {
+        "title": "Regulation-ready visuals",
+        "description": "Professional visual materials designed to meet compliance and regulatory standards while maintaining strong brand consistency."
       },
-      "step2": {
-        "title": "Submit your requests",
-        "description": "Submit unlimited requests through your dedicated Notion or Slack channel, guided by your PM for clarity."
+      "investorInfographics": {
+        "title": "Investor report infographics",
+        "description": "We turn complex financial data into clean, insightful visuals that investors can easily understand and trust."
       },
-      "step3": {
-        "title": "Receive your work (at least 48h First Draft)",
-        "description": "Your PM reviews your brief within 4–6 hours and coordinates your team. First draft in *at least 48 hours* for design projects or 3–5 days for video projects, depending on scope."
+      "linkedinCampaigns": {
+        "title": "Short-form campaigns for LinkedIn",
+        "description": "Engaging short-form content tailored for LinkedIn to boost brand visibility and audience engagement."
       },
-      "step4": {
-        "title": "Approve and download",
-        "description": "Review your draft in Notion or Figma, share feedback directly, and receive final delivery via Drive or Notion — fully managed by your PM."
+      "recruitmentVideos": {
+        "title": "Recruitment & branding videos",
+        "description": "High-quality videos that communicate your company culture and attract the right talent to your organization."
       }
     }
   },
-  "ourServices": {
-    "title": "What You Get With Our Subscription",
-    "subtitle": "Professional creative services across design, video, presentation, and localization — delivered fast and fully managed by your dedicated PM.",
-    "services": {
-      "design": {
-        "title": "Design & Branding",
-        "description": "Create brand identity, campaign visuals, social media assets, and marketing materials — all aligned with your style guide and brand tone."
+  "howItWorks": {
+    "title": "Our Process",
+    "subtitle": "Get started in minutes with our simple **managed 6-step workflow**",
+    "steps": {
+      "briefing": {
+        "step": "Step 1",
+        "title": "Briefing",
+        "description": "Submit your project requirements and creative goals."
       },
-      "video": {
-        "title": "Video & Motion",
-        "description": "Produce short-form videos, promotional clips, motion graphics, and localized subtitles for campaigns.Produce short-form videos, motion graphics, and promotional clips for campaigns — including subtitle and localization support."
+      "brandCheck": {
+        "step": "Step 2",
+        "title": "Brand / Compliance Check",
+        "description": "We ensure alignment with your brand guidelines and compliance."
       },
-      "development": {
-        "title": "Web & Landing Design",
-        "description": "Design campaign landing visuals, CMS upload assets, and responsive Webflow/Figma templates."
+      "creativeDraft": {
+        "step": "Step 3",
+        "title": "Creative Draft",
+        "description": "Our team develops the initial design or content concept."
       },
-      "presentation": {
-        "title": "Presentation & Documents",
-        "description": "Design pitch decks, IR reports, proposals, and internal documents with consistent visuals and storytelling."
+      "feedback": {
+        "step": "Step 4",
+        "title": "Feedback",
+        "description": "You review and share your comments for refinement."
       },
-      "content": {
-        "title": "Content Writing & Localization",
-        "description": "Craft marketing copy, reports, and localized content tailored for global campaigns — from blog posts and press materials to product pages and subtitles."
+      "dualOutput": {
+        "step": "Step 5",
+        "title": "Dual-version Output",
+        "description": "We prepare alternate versions to fit multiple use cases."
       },
-      "qa": {
-        "title": "Support & QA Ops",
-        "description": "Manage QA, asset delivery, analytics checks, and cross-platform review — ensuring every deliverable meets Funnel’s quality standard."
+      "finalDelivery": {
+        "step": "Step 6",
+        "title": "Final Delivery",
+        "description": "Receive the final, polished assets ready for publication."
       }
     }
   },
   "whyChooseUs": {
     "title": "Why choose us",
-    "subtitle": "Everything you need to scale your creative output — without hiring headaches, management overhead, or unpredictable freelancers.",
-    "benefits": {
-      "unlimited": {
-        "title": "Unlimited revisions per slot",
-        "description": "Request as many design or content changes as needed — your PM keeps revisions structured and ensures every update stays on track."
+    "subtitle": "Discover the key factors that create an exceptional experience with DailyDrop",
+    "columns": {
+      "ours": "DailyDrop",
+      "others": "Typical Agency"
+    },
+    "criteria": {
+      "industryKnowledge": {
+        "ours": "Deep understanding of your industry, ensuring tailored solutions.",
+        "others": "Limited industry understanding, resulting in generic outcomes."
       },
-      "delivery": {
-        "title": "PM-coordinated delivery",
-        "description": "Your PM coordinates your request within 4–6 hours and manages delivery from start to handoff. First draft in at least 48h for design, 3–5 days for video."
+      "brandConsistency": {
+        "ours": "Maintains consistent brand voice and visual identity across channels.",
+        "others": "Inconsistent tone and visuals across materials."
       },
-      "quality": {
-        "title": "Top-tier quality",
-        "description": "Every deliverable goes through a dual-check system by PM and QA — ensuring clarity, consistency, and visual precision in every output."
+      "reviewExperience": {
+        "ours": "Smooth and professional review process with minimal back-and-forth.",
+        "others": "Cumbersome review process and unclear feedback handling."
       },
-      "pause": {
-        "title": "Pause or cancel anytime",
-        "description": "Total flexibility — no long-term contracts, no penalties. Scale up, pause, or cancel whenever your workload changes."
+      "speed": {
+        "ours": "Fast turnaround time without sacrificing quality.",
+        "others": "Slower delivery due to less optimized workflow."
       },
-      "fixed": {
-        "title": "Fixed monthly rate",
-        "description": "One clear monthly fee covers your PM, QA, and creative team — no hidden costs, hourly charges, or complex add-ons."
-      },
-      "dedicated": {
-        "title": "Dedicated creative team",
-        "description": "Work with a managed creative team — including your PM, designers, editors, and QA — operating as a seamless extension of your brand. We ensure consistency, accountability, and reliable quality at every stage."
+      "revisionCount": {
+        "ours": "Flexible revisions to ensure satisfaction.",
+        "others": "Strict revision limits and additional costs."
       }
+    }
+  },
+  "freeTrial": {
+    "badge": "Limited Time Offer",
+    "title": "Try 5 Days of Content Creation — Free",
+    "subtitle": "Experience our managed workflow with real deliverables — no commitment required.",
+    "includes": {
+      "content": {
+        "title": "Content Pieces",
+        "description": "Two professionally written content pieces tailored to your brand voice and campaign goals."
+      },
+      "video": {
+        "title": "Short-form Video",
+        "description": "One engaging short-form video with motion graphics, perfect for social media or campaigns."
+      }
+    },
+    "features": {
+      "title": "What You'll Experience",
+      "items": [
+        "Dedicated PM coordination",
+        "48-hour turnaround for content",
+        "Unlimited revisions within trial",
+        "No credit card required"
+      ]
+    },
+    "cta": {
+      "button": "Start Your Free Trial",
+      "subtitle": "No credit card • No commitment • Cancel anytime"
     }
   },
   "pricing": {
@@ -261,8 +302,8 @@
         "answer2": "A slot is a managed workflow handled by a PM and creative team. You can submit unlimited requests via **Notion or Slack**, and your PM will assign and track progress for each project. Add more slots anytime for parallel production."
       },
       "2": {
-        "question": "What's the turnaround time for projects?",
-        "answer1": "Typical delivery times:",
+        "question": "How fast is delivery?",
+        "answer1": "Your PM reviews your brief within **4–6 hours** and coordinates your team. Typical first draft delivery:",
         "answer2": " • *Design projects* in **at least 48 hours**",
         "answer3": " • *Video & Motion* in **3–5 days**",
         "answer4": " • *Presentations & Reports* in **2–4 days**",
@@ -270,34 +311,40 @@
         "answer6": "Complex or multi-slot projects may take longer, scheduled by your PM for balanced output speed."
       },
       "3": {
-        "question": "How many projects can I work on at once?",
-        "answer1": "Each active slot runs one project at a time. You can submit unlimited requests to your queue — once a project is completed, the next one automatically begins. Multiple slots allow simultaneous production (e.g., **2 slots = design + video at once**)."
-      },
-      "4": {
         "question": "What if I don't like the design or result?",
         "answer1": "Every plan includes **unlimited revisions** within your slot.",
-        "answer2": "Your PM and QA review feedback, coordinate revisions with the creative team, and refine until you’re fully satisfied — no extra cost, no time limit."
+        "answer2": "Your PM and QA review feedback, coordinate revisions with the creative team, and refine until you're fully satisfied — no extra cost, no time limit."
+      },
+      "4": {
+        "question": "Do you support compliance reviews?",
+        "answer1": "Yes. Our QA process includes **dual-check reviews** (PM + QA) to ensure deliverables meet quality and consistency standards.",
+        "answer2": "For legal, regulatory, or brand compliance needs, we recommend sharing your guidelines during onboarding — our team will apply them throughout production."
       },
       "5": {
+        "question": "Can I use the trial content freely?",
+        "answer1": "Absolutely. All content created during your **5-day free trial** (2 content pieces + 1 video) is yours to keep and use commercially.",
+        "answer2": "You own 100% copyright and usage rights — even if you don't continue with a paid subscription."
+      },
+      "6": {
+        "question": "What format will I receive?",
+        "answer1": "You'll receive **editable source files** plus final exports:",
+        "answer2": " • *Design:* Figma files, AI/PSD, PNG/JPG",
+        "answer3": " • *Video:* MP4/MOV exports + source project files",
+        "answer4": " • *Documents:* Google Docs, PDF, PowerPoint/Keynote",
+        "answer5": "All files are organized in your shared Google Drive or delivered via your preferred method."
+      },
+      "7": {
+        "question": "Is there a contract?",
+        "answer1": "No long-term contracts. All plans run on a **flexible monthly subscription** — pause, cancel, or upgrade anytime.",
+        "answer2": "You're only committed to the current billing cycle. No penalties, no cancellation fees."
+      },
+      "8": {
         "question": "Can I pause my subscription?",
         "answer1": "Yes, absolutely. You can pause your plan anytime. While paused, your billing stops, and you can reactivate when ready — ideal for seasonal campaigns or when you don't have ongoing creative work."
       },
-      "6": {
-        "question": "Do I own the rights to the work?",
-        "answer1": "Yes, 100%. All design files, documents, videos, and source materials we produce are fully yours. Copyright and commercial usage rights are transferred to you upon delivery."
-      },
-      "7": {
-        "question": "What tools and platforms do you use?",
-        "answer1": "We primarily use **Figma, Adobe Creative Suite, After Effects, and DaVinci Resolve** for design and motion work.",
-        "answer2": "For collaboration, we operate through **Notion, Slack, and Google Drive** — giving you full visibility into project progress and files."
-      },
-      "8": {
-        "question": "Is there a minimum commitment?",
-        "answer1": "No minimum commitment. All plans run on a **flexible monthly subscription** — cancel, pause, or upgrade anytime."
-      },
       "9": {
         "question": "How do I submit requests?",
-        "answer1": "Once onboarded, you’ll receive access to your **Notion or Slack workspace** where you can create tasks, upload briefs, and set priorities.",
+        "answer1": "Once onboarded, you'll receive access to your **Notion or Slack workspace** where you can create tasks, upload briefs, and set priorities.",
         "answer2": "Your PM manages the workflow, assigns the right designer or editor, and ensures everything stays transparent and on track."
       }
     },
@@ -308,7 +355,7 @@
     }
   },
   "footer": {
-    "description": "Slot-based creative subscription serving teams across Singapore, Japan & Vietnam. Get PM-coordinated design, video, presentation, and localization — delivered through Notion with 48h–5d turnaround. No hiring, no freelancers, just dedicated creative workflows.",
+    "description": "Trusted by 750+ teams in Singapore, Japan & Vietnam. We help finance, healthcare, and real estate teams create content that's fast, brand-safe, and compliance-ready.",
     "company": {
       "title": "Company",
       "howItWorks": "How It Works",
@@ -322,22 +369,37 @@
       "contact": "Contact"
     },
     "legal": {
+      "privacy": "Privacy Policy",
       "terms": "Terms of Service",
-      "privacy": "Privacy Policy"
+      "contact": "Contact Us"
+    },
+    "contact": {
+      "title": "Get in touch"
     },
     "copyright": "All rights reserved."
   },
   "contact": {
     "title": "Get in touch",
     "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
-    "name": "Your Name",
-    "email": "Email Address",
-    "message": "Message",
-    "placeholder": "Tell us about your project...",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "companyName": "Company Name",
+    "companyNamePlaceholder": "Your Company Ltd.",
+    "email": "Email",
+    "emailPlaceholder": "john@company.com",
+    "department": "Department / Role",
+    "departmentPlaceholder": "Marketing Manager",
+    "message": "Message / Project Brief",
+    "messagePlaceholder": "Tell us about your project needs...",
     "send": "Send Message",
     "sending": "Sending...",
-    "success": "Message sent successfully! We will contact you soon.",
-    "error": "Failed to send message. Please try again."
+    "error": "Failed to send message. Please try again.",
+    "thankYou": {
+      "title": "Thank You!",
+      "subtitle": "Your message has been sent successfully.",
+      "message": "We'll review your inquiry and get back to you within 24 hours. Check your inbox for our response!",
+      "button": "Close"
+    }
   },
   "terms": {
     "meta": {
@@ -438,16 +500,7 @@
       "governing": {
         "title": "Governing Law and Disputes",
         "content": "These terms are governed by the laws of [Your Jurisdiction]. Any disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. You agree to waive any right to a jury trial or to participate in a class action lawsuit."
-      },
-      "contact": {
-        "title": "Contact Information",
-        "content": "For questions about these Terms of Service, please contact us at: Email: legal@dailydrop.com. Address: [Your Company Address]. We will respond to inquiries within 5 business days."
       }
-    },
-    "cta": {
-      "title": "Questions About Terms?",
-      "subtitle": "Our legal team is here to help clarify any questions about these terms.",
-      "button": "Contact Legal Team"
     }
   },
   "privacyPolicy": {
@@ -541,16 +594,7 @@
       "changes": {
         "title": "Changes to This Privacy Policy",
         "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the 'Last Updated' date. We encourage you to review this Privacy Policy periodically. Your continued use of our services after any changes constitutes your acceptance of the new Privacy Policy."
-      },
-      "contact": {
-        "title": "Contact Us",
-        "content": "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at: Email: privacy@dailydrop.com. We will respond to your inquiry within 30 days. For data protection matters in the EU, you also have the right to lodge a complaint with your local data protection authority."
       }
-    },
-    "cta": {
-      "title": "Questions About Your Privacy?",
-      "subtitle": "Our team is here to help. Contact us anytime about your data and privacy.",
-      "button": "Contact Privacy Team"
     }
   },
   "paymentTerms": {
@@ -672,16 +716,7 @@
       "disputeResolution": {
         "title": "Payment Disputes and Chargebacks",
         "content": "If you have concerns about a charge, please contact us at billing@dailydrop.com before initiating a chargeback. Chargebacks result in immediate account suspension and may incur additional fees. We will work with you to resolve any legitimate billing concerns promptly and fairly."
-      },
-      "contact": {
-        "title": "Billing Support",
-        "content": "For any billing questions, payment issues, or invoice requests, please contact: Email: billing@dailydrop.com. Response time: Within 24 hours on business days. Our team is here to help resolve any payment-related concerns quickly."
       }
-    },
-    "cta": {
-      "title": "Questions About Payments?",
-      "subtitle": "Our billing team is ready to help clarify any payment or subscription questions.",
-      "button": "Contact Billing Team"
     }
   }
 }

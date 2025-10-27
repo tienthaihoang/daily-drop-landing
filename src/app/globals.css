@@ -20,5 +20,59 @@ html {
   display: flex;
   gap: 1rem;
   will-change: transform;
-  animation: scroll 30s linear infinite;
+  animation: scroll 40s linear infinite;
+}
+
+/* Ant Design Select dropdown - Dark theme */
+.ant-select-dropdown {
+  background-color: rgba(15, 23, 42, 0.95) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.ant-select-item {
+  color: rgb(203, 213, 225) !important;
+}
+
+.ant-select-item-option-selected {
+  background-color: rgba(147, 51, 234, 0.2) !important;
+  color: rgb(192, 132, 252) !important;
+}
+
+.ant-select-item-option-active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.ant-select-item-option:hover {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Select trigger trong navbar */
+.ant-select-selector {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+}
+
+.ant-select-arrow {
+  color: rgb(148, 163, 184) !important;
+}
+
+.ant-select-focused .ant-select-selector {
+  border-color: rgb(147, 51, 234) !important;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.2) !important;
+}
+
+.contact-modal .ant-modal-content {
+  background-color: #0f172a !important;
+  padding: 0 !important;
+}
+
+.contact-modal .ant-modal-close {
+  color: #94a3b8 !important;
+}
+
+.contact-modal .ant-modal-close:hover {
+  color: #ffffff !important;
 }
